@@ -1,25 +1,12 @@
+
 # FENIX: Enabling In-Network DNN Inference with FPGA-Enhanced Programmable Switches
 
-This repository hosts the code for **FENIX**, a research project focused on enabling in-network deep neural network (DNN) inference using FPGA-enhanced programmable switches.
+FENIX is a hybrid in-network machine learning system designed for efficient, low-latency, and highly accurate network traffic analysis. By performing feature extraction on programmable switch ASICs and accelerating neural network inference with FPGAs, FENIX combines the strengths of both devices to improve intelligence in the network data plane.
+
+The system is implemented on a platform integrating Tofino ASIC and ZU19EG FPGA, and evaluated on real-world network traffic datasets. Results show that FENIX achieves microsecond-level inference latency, multi-terabit throughput, and high accuracy on mainstream traffic classification tasks, all with low hardware overhead.
 
 > **Note:**  
-> The code is currently under organization and will be released soon. Please stay tuned!
-
-## Project Status
-
-- [x] Repository created
-- [ ] Code cleanup in progress
-- [ ] Documentation
-- [ ] Initial release
-
-## Description
-
-FENIX explores the integration of deep neural network inference into programmable network switches with FPGA enhancements, aiming to accelerate AI workloads and optimize resource utilization in network environments.
-
-## Contact
-
-For questions or collaboration, please contact:  
-[Your Name / Email / Institution]
+> The code is currently under organization and will be open-sourced soon. Please stay tuned!
 
 ## License
 
