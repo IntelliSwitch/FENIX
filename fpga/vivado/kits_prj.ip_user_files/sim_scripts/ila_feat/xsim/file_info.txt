@@ -1,2 +1,0 @@
-ila_feat.v,verilog,xil_defaultlib,../../../ip/ila_feat/sim/ila_feat.v,incdir="../../../ip/ila_feat/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v

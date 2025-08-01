@@ -1,2 +1,0 @@
-fifo_gen_axis1024.v,verilog,xil_defaultlib,../../../ip/fifo_gen_axis1024/sim/fifo_gen_axis1024.v,
-glbl.v,Verilog,xil_defaultlib,glbl.v

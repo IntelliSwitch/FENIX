@@ -1,7 +1,0 @@
-verilog xil_defaultlib --include "../../../ip/ila_l1/hdl/verilog" \
-"../../../ip/ila_l1/sim/ila_l1.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-# Do not sort compile order
-nosort

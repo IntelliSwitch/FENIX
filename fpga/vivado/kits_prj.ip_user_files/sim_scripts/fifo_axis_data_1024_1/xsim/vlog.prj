@@ -1,7 +1,0 @@
-verilog xil_defaultlib --include "../../../ipstatic/hdl" \
-"../../../../kits_prj.gen/sources_1/ip/fifo_axis_data_1024_1/sim/fifo_axis_data_1024_1.v" \
-
-verilog xil_defaultlib "glbl.v"
-
-# Do not sort compile order
-nosort

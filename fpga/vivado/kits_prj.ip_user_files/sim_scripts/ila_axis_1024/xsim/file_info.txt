@@ -1,2 +1,0 @@
-ila_axis_1024.v,verilog,xil_defaultlib,../../../ip/ila_axis_1024/sim/ila_axis_1024.v,incdir="../../../ip/ila_axis_1024/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,2 +1,0 @@
-ila_ktisum.v,verilog,xil_defaultlib,../../../ip/ila_ktisum/sim/ila_ktisum.v,incdir="../../../ip/ila_ktisum/hdl/verilog"
-glbl.v,Verilog,xil_defaultlib,glbl.v
