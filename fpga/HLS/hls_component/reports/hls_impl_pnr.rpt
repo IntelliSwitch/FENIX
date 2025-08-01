@@ -1,0 +1,725 @@
+================================================================
+== Vivado Place & Route Results
+================================================================
++ General Information:
+    * Date:            Sun Apr 27 02:27:05 +0800 2025
+    * Version:         2024.2 (Build 5238294 on Nov  8 2024)
+    * Project:         hls_component
+    * Solution:        hls (Vivado IP Flow Target)
+    * Product family:  zynquplus
+    * Target device:   xczu19eg-ffvc1760-2-i
+
+
+================================================================
+== Run Constraints & Options
+================================================================
++ Design Constraints & Options:
+    * Place & Route target clock:  3.571 ns
+    * C-Synthesis target clock:    3.571 ns
+    * C-Synthesis uncertainty:     27%
+
++ RTL Synthesis Options:
+    * config_export -vivado_synth_strategy:     default
+    * config_export -vivado_synth_design_args:  -directive sdx_optimization_effort_high
+
++ Place & Route Options:
+    * config_export -vivado_impl_strategy:  default
+    * config_export -vivado_phys_opt:       auto
+
++ Reporting Options:
+    * config_export -vivado_report_level:      2
+    * config_export -vivado_max_timing_paths:  10
+
+
+================================================================
+== Place & Route Resource Summary
+================================================================
+LUT:              7150
+FF:               6517
+DSP:              24
+BRAM:             0
+URAM:             0
+SRL:              291
+
+
+================================================================
+== Place & Route Timing Summary
+================================================================
+* Timing was met
++----------------+-------------+
+| Timing         | Period (ns) |
++----------------+-------------+
+| Target         | 3.571       |
+| Post-Synthesis | 2.005       |
+| Post-Route     | 2.874       |
++----------------+-------------+
+
+
+================================================================
+== Place & Route Resources
+================================================================
++--------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| Name                                             | LUT  | FF   | DSP | BRAM | URAM | SRL | Pragma | Impl | Latency | Variable | Source |
++--------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+| inst                                             | 7150 | 6517 | 24  |      |      |     |        |      |         |          |        |
+|   conv2d_3_stream_layer_9u_U0                    | 178  | 87   |     |      |      |     |        |      |         |          |        |
+|     (conv2d_3_stream_layer_9u_U0)                | 118  | 86   |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                     | 60   | 1    |     |      |      |     |        |      |         |          |        |
+|   conv2d_3_stream_layer_post_9u_U0               | 144  | 141  |     |      |      |     |        |      |         |          |        |
+|   conv2d_4_stream_layer_9u_U0                    | 232  | 105  |     |      |      |     |        |      |         |          |        |
+|     (conv2d_4_stream_layer_9u_U0)                | 172  | 104  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                     | 62   | 1    |     |      |      |     |        |      |         |          |        |
+|   conv2d_4_stream_layer_post_9u_U0               | 141  | 54   |     |      |      |     |        |      |         |          |        |
+|   conv2d_5_stream_layer_9u_U0                    | 379  | 123  |     |      |      |     |        |      |         |          |        |
+|     (conv2d_5_stream_layer_9u_U0)                | 299  | 122  |     |      |      |     |        |      |         |          |        |
+|     flow_control_loop_pipe_U                     | 80   | 1    |     |      |      |     |        |      |         |          |        |
+|   conv2d_5_stream_layer_post_9u_U0               | 76   | 61   |     |      |      |     |        |      |         |          |        |
+|   conv_out3_10_U                                 | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_11_U                                 | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_12_U                                 | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_13_U                                 | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_1_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_2_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_3_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_4_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_5_U                                  | 17   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_6_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_7_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_8_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_9_U                                  | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out3_U                                    | 14   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_10_U                                 | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_11_U                                 | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_1_U                                  | 9    | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_2_U                                  | 9    | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_3_U                                  | 9    | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_4_U                                  | 9    | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_5_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_6_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_7_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_8_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_9_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out4_U                                    | 21   | 7    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_1_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_2_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_3_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_4_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_5_U                                  | 8    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_6_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_7_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_8_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_9_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   conv_out5_U                                    | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   embedding_layer_stream_9u_U0                   | 4    | 3    |     |      |      |     |        |      |         |          |        |
+|   fc2_embedding_1_U                              | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   fc2_embedding_U                                | 24   | 7    |     |      |      |     |        |      |         |          |        |
+|   feature2_embedding_U                           | 600  | 579  |     |      |      |     |        |      |         |          |        |
+|   feature_concate_layer_stream_9u_U0             |      | 1    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_0_U                          | 9    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_1_U                          | 9    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_2_U                          | 8    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_3_U                          | 8    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_4_U                          | 9    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_5_U                          | 10   | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_6_U                          | 10   | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_7_U                          | 9    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_embedding_8_U                          | 9    | 9    |     |      |      |     |        |      |         |          |        |
+|   feature_separate_layer_stream_9u_U0            | 78   | 91   |     |      |      |     |        |      |         |          |        |
+|     (feature_separate_layer_stream_9u_U0)        | 1    | 1    |     |      |      |     |        |      |         |          |        |
+|   fully_connect2_layer_stream_U0                 | 491  | 660  |     |      |      |     |        |      |         |          |        |
+|   fully_connect_layer_stream3_9u_U0              | 123  | 76   |     |      |      |     |        |      |         |          |        |
+|     (fully_connect_layer_stream3_9u_U0)          | 76   | 75   |     |      |      |     |        |      |         |          |        |
+|   ipd_x_1_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_2_U                                      | 9    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_3_U                                      | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_4_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_5_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_6_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_7_U                                      | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_8_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_U                                        | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_0_U                            | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_1_U                            | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_2_U                            | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_3_U                            | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_4_U                            | 15   | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_5_U                            | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_6_U                            | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_7_U                            | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   ipd_x_embedding_8_U                            | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   l_softmax_layer_stream_U0                      | 2213 | 2515 | 24  |      |      |     |        |      |         |          |        |
+|     (l_softmax_layer_stream_U0)                  | 381  | 520  |     |      |      |     |        |      |         |          |        |
+|     fadd_32ns_32ns_32_10_full_dsp_1_U797         | 208  | 354  | 2   |      |      |     |        |      |         |          |        |
+|     fexp_32ns_32ns_32_21_full_dsp_1_U801         | 772  | 403  | 7   |      |      |     |        |      |         |          |        |
+|     flog_32ns_32ns_32_19_full_dsp_1_U800         | 468  | 639  | 13  |      |      |     |        |      |         |          |        |
+|     fsub_32ns_32ns_32_10_full_dsp_1_U798         | 212  | 355  | 2   |      |      |     |        |      |         |          |        |
+|     sitofp_32ns_32_7_no_dsp_1_U799               | 173  | 244  |     |      |      |     |        |      |         |          |        |
+|   len_x_1_U                                      | 9    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_2_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_3_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_4_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_5_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_6_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_7_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_8_U                                      | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_U                                        | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_0_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_1_U                            | 10   | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_2_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_3_U                            | 8    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_4_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_5_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_6_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_7_U                            | 15   | 9    |     |      |      |     |        |      |         |          |        |
+|   len_x_embedding_8_U                            | 7    | 9    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_0_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_0_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_0_2_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_1_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_1_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_1_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_2_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_2_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_2_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_3_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_3_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_3_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_4_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_4_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_4_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_5_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_5_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_5_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_6_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_6_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_6_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_7_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_7_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding3_7_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_0_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_0_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_0_2_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_1_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_1_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_1_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_2_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_2_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_2_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_3_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_3_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_3_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_4_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_4_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_4_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_5_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_5_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_5_2_U                          | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_6_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_6_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_6_2_U                          | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_7_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_7_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding4_7_2_U                          | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_0_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_0_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_0_2_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_1_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_1_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_1_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_2_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_2_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_2_2_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_3_0_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_3_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_3_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_4_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_4_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_4_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_5_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_5_1_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_5_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_6_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_6_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_6_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_7_0_U                          | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_7_1_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   proj_embedding5_7_2_U                          | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   reshape_concate_layer_stream_U0                | 3    | 1    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_3_stream_layer_9u_U0_U        | 2    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_3_stream_layer_post_9u_U0_U   | 8    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_4_stream_layer_9u_U0_U        | 2    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_4_stream_layer_post_9u_U0_U   | 12   | 7    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_5_stream_layer_9u_U0_U        | 6    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_conv2d_5_stream_layer_post_9u_U0_U   | 8    | 6    |     |      |      |     |        |      |         |          |        |
+|   start_for_embedding_layer_stream_9u_U0_U       | 6    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_feature_concate_layer_stream_9u_U0_U | 6    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_fully_connect2_layer_stream_U0_U     | 6    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_fully_connect_layer_stream3_9u_U0_U  | 18   | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_l_softmax_layer_stream_U0_U          | 3    | 4    |     |      |      |     |        |      |         |          |        |
+|   start_for_reshape_concate_layer_stream_U0_U    | 4    | 4    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_10_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_11_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_12_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_13_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_14_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_15_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_16_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_17_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_18_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_19_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_1_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_20_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_21_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_22_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_23_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_24_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_25_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_26_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_27_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_28_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_29_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_2_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_30_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_31_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_32_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_33_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_34_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_35_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_36_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_37_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_38_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_39_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_3_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_40_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_41_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_42_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_43_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_44_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_45_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_46_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_47_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_48_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_49_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_4_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_50_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_51_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_52_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_53_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_5_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_6_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_7_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_8_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_9_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out3_U                                     | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_10_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_11_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_12_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_13_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_14_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_15_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_16_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_17_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_18_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_19_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_1_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_20_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_21_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_22_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_23_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_24_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_25_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_26_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_27_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_28_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_29_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_2_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_30_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_31_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_32_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_33_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_34_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_35_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_36_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_37_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_38_U                                  | 8    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_39_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_3_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_40_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_41_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_42_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_43_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_44_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_45_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_46_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_47_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_48_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_49_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_4_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_50_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_51_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_52_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_53_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_54_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_55_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_56_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_57_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_58_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_59_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_5_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_60_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_61_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_62_U                                  | 8    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_63_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_64_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_65_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_66_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_67_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_68_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_69_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_6_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_70_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_71_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_7_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_8_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_9_U                                   | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out4_U                                     | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_10_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_11_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_12_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_13_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_14_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_15_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_16_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_17_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_18_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_19_U                                  | 7    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_1_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_20_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_21_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_22_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_23_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_24_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_25_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_26_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_27_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_28_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_29_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_2_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_30_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_31_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_32_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_33_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_34_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_35_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_36_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_37_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_38_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_39_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_3_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_40_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_41_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_42_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_43_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_44_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_45_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_46_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_47_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_48_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_49_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_4_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_50_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_51_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_52_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_53_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_54_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_55_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_56_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_57_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_58_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_59_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_5_U                                   | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_60_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_61_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_62_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_63_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_64_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_65_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_66_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_67_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_68_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_69_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_6_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_70_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_71_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_72_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_73_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_74_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_75_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_76_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_77_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_78_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_79_U                                  | 5    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_7_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_80_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_81_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_82_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_83_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_84_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_85_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_86_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_87_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_88_U                                  | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_89_U                                  | 4    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_8_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_9_U                                   | 6    | 5    |     |      |      |     |        |      |         |          |        |
+|   sum_out5_U                                     | 5    | 5    |     |      |      |     |        |      |         |          |        |
++--------------------------------------------------+------+------+-----+------+------+-----+--------+------+---------+----------+--------+
+
+
+================================================================
+== Place & Route Fail Fast
+================================================================
++-----------------------------------------------------------+-----------+--------+--------+
+| Criteria                                                  | Guideline | Actual | Status |
++-----------------------------------------------------------+-----------+--------+--------+
+| LUT                                                       | 70%       | 1.37%  | OK     |
+| FD                                                        | 50%       | 0.62%  | OK     |
+| LUTRAM+SRL                                                | 25%       | 0.39%  | OK     |
+| CARRY8                                                    | 25%       | 0.30%  | OK     |
+| MUXF7                                                     | 15%       | 0.09%  | OK     |
+| DSP                                                       | 80%       | 1.22%  | OK     |
+| RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+| URAM                                                      | 80%       | 0.00%  | OK     |
+| DSP+RAMB+URAM (Avg)                                       | 70%       | 1.22%  | OK     |
+| BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+| DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+| MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+| Control Sets                                              | 9801      | 510    | OK     |
+| Average Fanout for modules > 100k cells                   | 4         | 1.75   | OK     |
+| Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+| Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+| TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+| TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+| TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+| TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+| Number of paths above max LUT budgeting (0.300ns)         | 0         | 0      | OK     |
+| Number of paths above max Net budgeting (0.208ns)         | 0         | 0      | OK     |
++-----------------------------------------------------------+-----------+--------+--------+
+
+
+================================================================
+== Place & Route Timing Paths
+================================================================
+* Timing was met
++-------+-------+------------------------------------------------------+------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path  | SLACK | STARTPOINT PIN                                       | ENDPOINT PIN                                                                 | LOGIC LEVELS | MAX FANOUT | DATAPATH DELAY | DATAPATH LOGIC | DATAPATH NET |
+|       |       |                                                      |                                                                              |              |            |                |          DELAY |        DELAY |
++-------+-------+------------------------------------------------------+------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+| Path1 | 0.697 | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]/C | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg/R |            5 |        128 |          2.756 |          0.621 |        2.135 |
+| Path2 | 0.697 | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]/C | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg/R |            5 |        128 |          2.756 |          0.621 |        2.135 |
+| Path3 | 0.706 | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]/C | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg/R |            5 |        128 |          2.746 |          0.621 |        2.125 |
+| Path4 | 0.706 | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]/C | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg/R |            5 |        128 |          2.746 |          0.621 |        2.125 |
+| Path5 | 0.715 | feature2_embedding_U/raddr_reg[0]/C                  | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]/D       |            1 |        129 |          2.837 |          0.231 |        2.606 |
++-------+-------+------------------------------------------------------+------------------------------------------------------------------------------+--------------+------------+----------------+----------------+--------------+
+
+    +--------------------------------------------------------------------------------+---------------------+
+    | Path1 Cells                                                                    | Primitive Type      |
+    +--------------------------------------------------------------------------------+---------------------+
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/raddr_reg[0]                                              | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_0_3_0_13/RAMA_D1 | CLB.LUTRAM.RAM32M16 |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]           | REGISTER.SDR.FDRE   |
+    +--------------------------------------------------------------------------------+---------------------+
+
+    +--------------------------------------------------------------------------------+---------------------+
+    | Path2 Cells                                                                    | Primitive Type      |
+    +--------------------------------------------------------------------------------+---------------------+
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/raddr_reg[0]                                              | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_0_3_0_13/RAMA_D1 | CLB.LUTRAM.RAM32M16 |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]           | REGISTER.SDR.FDRE   |
+    +--------------------------------------------------------------------------------+---------------------+
+
+    +--------------------------------------------------------------------------------+---------------------+
+    | Path3 Cells                                                                    | Primitive Type      |
+    +--------------------------------------------------------------------------------+---------------------+
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/raddr_reg[0]                                              | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_0_3_0_13/RAMA_D1 | CLB.LUTRAM.RAM32M16 |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]           | REGISTER.SDR.FDRE   |
+    +--------------------------------------------------------------------------------+---------------------+
+
+    +--------------------------------------------------------------------------------+---------------------+
+    | Path4 Cells                                                                    | Primitive Type      |
+    +--------------------------------------------------------------------------------+---------------------+
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/raddr_reg[0]                                              | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_0_3_0_13/RAMA_D1 | CLB.LUTRAM.RAM32M16 |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]           | REGISTER.SDR.FDRE   |
+    +--------------------------------------------------------------------------------+---------------------+
+
+    +--------------------------------------------------------------------------------+---------------------+
+    | Path5 Cells                                                                    | Primitive Type      |
+    +--------------------------------------------------------------------------------+---------------------+
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp57_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp58_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp62_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816_reg[2]                             | REGISTER.SDR.FDRE   |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_31         | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_10         | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/flow_control_loop_pipe_U/s1_fu_196[2]_i_3          | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/s1_load_reg_816[2]_i_1                             | CLB.LUT.LUT6        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp38_done_reg_i_1__1  | CLB.LUT.LUT2        |
+    | conv2d_3_stream_layer_9u_U0/ap_block_pp0_stage0_subdone_grp63_done_reg_reg     | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/raddr_reg[0]                                              | REGISTER.SDR.FDRE   |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_0_3_0_13/RAMA_D1 | CLB.LUTRAM.RAM32M16 |
+    | feature2_embedding_U/U_CNN_stream_fifo_w1152_d4_A_ram/mem_reg_reg[1]           | REGISTER.SDR.FDRE   |
+    +--------------------------------------------------------------------------------+---------------------+
+
+
+================================================================
+== Place & Route Vivado Reports
+================================================================
++--------------------------+--------------------------------------------------------------------+
+| Report Type              | Report Location                                                    |
++--------------------------+--------------------------------------------------------------------+
+| design_analysis          | impl/verilog/report/CNN_stream_design_analysis_routed.rpt          |
+| failfast                 | impl/verilog/report/CNN_stream_failfast_routed.rpt                 |
+| power                    | impl/verilog/report/CNN_stream_power_routed.rpt                    |
+| status                   | impl/verilog/report/CNN_stream_status_routed.rpt                   |
+| timing                   | impl/verilog/report/CNN_stream_timing_routed.rpt                   |
+| timing_paths             | impl/verilog/report/CNN_stream_timing_paths_routed.rpt             |
+| utilization              | impl/verilog/report/CNN_stream_utilization_routed.rpt              |
+| utilization_hierarchical | impl/verilog/report/CNN_stream_utilization_hierarchical_routed.rpt |
++--------------------------+--------------------------------------------------------------------+
+
+

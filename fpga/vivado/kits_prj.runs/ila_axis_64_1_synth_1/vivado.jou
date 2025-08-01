@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Wed Dec  4 08:59:11 2024
+# Process ID         : 8516
+# Current directory  : D:/sidejob/kitsum_1024B_xy_20231211/kits_prj.runs/ila_axis_64_1_synth_1
+# Command line       : vivado.exe -log ila_axis_64_1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ila_axis_64_1.tcl
+# Log file           : D:/sidejob/kitsum_1024B_xy_20231211/kits_prj.runs/ila_axis_64_1_synth_1/ila_axis_64_1.vds
+# Journal file       : D:/sidejob/kitsum_1024B_xy_20231211/kits_prj.runs/ila_axis_64_1_synth_1\vivado.jou
+# Running On         : BozhiDesktop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : Intel(R) Core(TM) i5-14400
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33955 MB
+# Swap memory        : 10966 MB
+# Total Virtual      : 44921 MB
+# Available Virtual  : 10878 MB
+#-----------------------------------------------------------
+source ila_axis_64_1.tcl -notrace

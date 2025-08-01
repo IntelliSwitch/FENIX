@@ -1,0 +1,2 @@
+ila_axis_64_1.v,verilog,xil_defaultlib,../../../ip/ila_axis_64_1/sim/ila_axis_64_1.v,incdir="../../../ip/ila_axis_64_1/hdl/verilog"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.ip_user_files/ip/fifo_axis_data_64/sim/fifo_axis_data_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_axis_data_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.ip_user_files/ip/fifo_axis_data_indepenclk_64/sim/fifo_axis_data_indepenclk_64.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module fifo_axis_data_indepenclk_64
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/Config_fifo_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Config_fifo_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/config_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module config_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/config_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module config_top
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/determine.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module determine
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/muit_addr_data.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module muit_addr_data
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sources_1/new/rx/rx_hl_change_64b.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module rx_hl_change_64b
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/vivado_code/kitsum_prj_20230823/kitsum_prj_20230823/kits_prj.srcs/sim_1/new/tb_config_top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_config_top

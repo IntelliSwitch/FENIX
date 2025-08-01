@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../ip/vio_addr/hdl/verilog" --include "../../../ip/vio_addr/hdl" \
+"../../../ip/vio_addr/sim/vio_addr.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

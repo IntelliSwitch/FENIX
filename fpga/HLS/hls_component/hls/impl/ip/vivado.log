@@ -1,0 +1,79 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Fri Aug  1 07:21:42 2025
+# Process ID         : 29684
+# Current directory  : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip
+# Command line       : vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file           : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/vivado.log
+# Journal file       : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip\vivado.jou
+# Running On         : BozhiDesktop
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : Intel(R) Core(TM) i5-14400
+# CPU Frequency      : 2496 MHz
+# CPU Physical cores : 10
+# CPU Logical cores  : 16
+# Host memory        : 33955 MB
+# Swap memory        : 2147 MB
+# Total Virtual      : 36102 MB
+# Available Virtual  : 18275 MB
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/hls_data.json outdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip srcdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 82 verilog file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 58 vhdl file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+Generating 5 subcores in D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/ip.tmp:
+impl/misc/CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Generating CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/CNN_stream_fadd_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip via file impl/misc/CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip via file impl/misc/CNN_stream_fexp_32ns_32ns_32_21_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip via file impl/misc/CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip via file impl/misc/CNN_stream_flog_32ns_32ns_32_19_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip via file impl/misc/CNN_stream_fsub_32ns_32ns_32_10_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip via file impl/misc/CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip'...
+INFO: Done generating CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip via file impl/misc/CNN_stream_sitofp_32ns_32_7_no_dsp_1_ip.tcl
+INFO: Import ports from HDL: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl/CNN_stream.vhd (CNN_stream)
+INFO: Add axi4stream interface din
+INFO: Add axi4stream interface dout_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add axi4stream interface dout_1
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/component.xml
+INFO: Created IP archive D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_CNN_stream_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Fri Aug  1 07:21:55 2025...

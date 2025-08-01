@@ -1,0 +1,66 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                        | Instructions | Description                                                                            |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                             |  2,325       | After all functions are compiled and linked into a single design                       |
+|               |                             |              |                                                                                        |
+| Unroll/Inline |                             |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                  | 83,688       | user unroll pragmas are applied                                                        |
+|               | (2) simplification          |  5,702       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                  |  2,686       | user inline pragmas are applied                                                        |
+|               | (4) simplification          |  2,677       | simplification of applied user inline pragmas                                          |
+|               |                             |              |                                                                                        |
+| Array/Struct  |                             |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition         |  9,318       | user array partition pragmas are applied                                               |
+|               | (2) simplification          |  4,857       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate  |  5,189       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape           |  8,145       | apply array reshape pragmas                                                            |
+|               | (5) access patterns         |  8,036       | array access pattern optmizations                                                      |
+|               |                             |              |                                                                                        |
+| Performance   |                             |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification     |  8,108       | loop and instruction simplification                                                    |
+|               | (2) parallelization         |  7,982       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition         |  9,314       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification          |  8,000       | simplification of design after performance transformations                             |
+|               |                             |              |                                                                                        |
+| HW Transforms |                             |              | After hardware transfomations                                                          |
+|               | (1) lowering                |  8,385       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations           | 10,279       | high level synthesis optimizations                                                     |
++---------------+-----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++------------------------------------+------------------------+--------------+---------------+--------------+-------------+---------------+
+| Function                           | Location               | Compile/Link | Unroll/Inline | Array/Struct | Performance | HW Transforms |
++------------------------------------+------------------------+--------------+---------------+--------------+-------------+---------------+
+| + CNN_stream                       | ComponentsStream.cpp:5 | 2,325        | 2,677         | 8,036        | 8,000       | 10,279        |
+|    feature_separate_layer_strea... | ComponentStream.h:11   |   33         |   73          |   38         |   38        |    77         |
+|    embedding_layer_stream<9>       | ComponentStream.h:27   |   79         |  577          | 1,207        | 1,207       | 1,477         |
+|    feature_concate_layer_stream... | ComponentStream.h:45   |   81         |  379          | 1,513        | 1,513       | 2,062         |
+|    fully_connect_layer_stream3<... | ComponentStream.h:90   |  125         |  338          | 1,600        | 1,600       | 2,399         |
+|    conv2d_3_stream_layer<9>        | ComponentStream.h:122  |  170         |   92          |  166         |  166        |   446         |
+|    conv2d_3_stream_layer_post<9... | ComponentStream.h:159  |  114         |  165          |   97         |   97        |   222         |
+|    conv2d_4_stream_layer<9>        | ComponentStream.h:180  |  170         |  104          |  208         |  208        |   572         |
+|    conv2d_4_stream_layer_post<9... | ComponentStream.h:217  |  125         |  205          |  121         |  121        |   266         |
+|    conv2d_5_stream_layer<9>        | ComponentStream.h:238  |  171         |  116          |  250         |  250        |   698         |
+|    conv2d_5_stream_layer_post<9... | ComponentStream.h:275  |  136         |  241          |  141         |  141        |   302         |
+|    reshape_concate_layer_stream... | ComponentStream.h:294  |  182         |  111          |  219         |  219        |   358         |
+|    fully_connect2_layer_stream     | ComponentStream.h:316  |   69         |   59          |  165         |  111        |   148         |
+|  + l_softmax_layer_stream          | ComponentStream.h:331  |  465         |   92          |   98         |   98        |    95         |
+|   + exp                            | expfloat.cpp:15        |    4         |               |              |             |               |
+|      exp                           | hls_exp_float.cpp:15   |    2         |               |              |             |               |
+|   + log                            | logfloat.cpp:7         |    4         |               |              |             |               |
+|      log                           | hls_log_float.cpp:7    |    2         |               |              |             |               |
++------------------------------------+------------------------+--------------+---------------+--------------+-------------+---------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

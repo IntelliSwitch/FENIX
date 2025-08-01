@@ -1,0 +1,370 @@
+
+
+================================================================
+== Vitis HLS Report for 'embedding_layer_stream_9u_s'
+================================================================
+* Date:           Fri Aug  1 07:20:12 2025
+
+* Version:        2024.2 (Build 5238294 on Nov  8 2024)
+* Project:        hls_component
+* Solution:       hls (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu19eg-ffvc1760-2-i
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.57 ns|  2.540 ns|     0.96 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        1|        1|  3.571 ns|  3.571 ns|    1|    1|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+---------+--------+-----+
+|       Name      | BRAM_18K|  DSP |    FF   |   LUT  | URAM|
++-----------------+---------+------+---------+--------+-----+
+|DSP              |        -|     -|        -|       -|    -|
+|Expression       |        -|     -|        0|       4|    -|
+|FIFO             |        -|     -|        -|       -|    -|
+|Instance         |        -|     -|        -|       -|    -|
+|Memory           |      100|     -|        0|       0|    -|
+|Multiplexer      |        -|     -|        0|     356|    -|
+|Register         |        -|     -|        4|       -|    -|
++-----------------+---------+------+---------+--------+-----+
+|Total            |      100|     0|        4|     360|    0|
++-----------------+---------+------+---------+--------+-----+
+|Available        |     1968|  1968|  1045440|  522720|  128|
++-----------------+---------+------+---------+--------+-----+
+|Utilization (%)  |        5|     0|       ~0|      ~0|    0|
++-----------------+---------+------+---------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    +--------------------------------------+----------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |                Memory                |                                   Module                                   | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +--------------------------------------+----------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |p_ZL26ipd_embedding_table_stream_0_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_0_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    4|     1|        10244|
+    |p_ZL26ipd_embedding_table_stream_1_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_1_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    4|     1|        10244|
+    |p_ZL26ipd_embedding_table_stream_2_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_2_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    3|     1|         7683|
+    |p_ZL26ipd_embedding_table_stream_3_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_3_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    3|     1|         7683|
+    |p_ZL26ipd_embedding_table_stream_4_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_4_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    2|     1|         5122|
+    |p_ZL26ipd_embedding_table_stream_5_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_5_ROM_AUTO_1R  |        5|  0|   0|    0|  2561|    2|     1|         5122|
+    |p_ZL26ipd_embedding_table_stream_6_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_6_ROM_AUTO_1R  |       10|  0|   0|    0|  2561|    5|     1|        12805|
+    |p_ZL26ipd_embedding_table_stream_7_U  |embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_7_ROM_AUTO_1R  |       10|  0|   0|    0|  2561|    5|     1|        12805|
+    |p_ZL26len_embedding_table_stream_0_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_0_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    4|     1|         6004|
+    |p_ZL26len_embedding_table_stream_1_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_1_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    4|     1|         6004|
+    |p_ZL26len_embedding_table_stream_2_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_2_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    3|     1|         4503|
+    |p_ZL26len_embedding_table_stream_3_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_3_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    3|     1|         4503|
+    |p_ZL26len_embedding_table_stream_4_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_4_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    2|     1|         3002|
+    |p_ZL26len_embedding_table_stream_5_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_5_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    2|     1|         3002|
+    |p_ZL26len_embedding_table_stream_6_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_6_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    5|     1|         7505|
+    |p_ZL26len_embedding_table_stream_7_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_7_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    5|     1|         7505|
+    |p_ZL26len_embedding_table_stream_8_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_8_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    5|     1|         7505|
+    |p_ZL26len_embedding_table_stream_9_U  |embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_9_ROM_AUTO_1R  |        5|  0|   0|    0|  1501|    5|     1|         7505|
+    +--------------------------------------+----------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total                                 |                                                                            |      100|  0|   0|    0| 35498|   66|    18|       128746|
+    +--------------------------------------+----------------------------------------------------------------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------+----------+----+---+----+------------+------------+
+    |  Variable Name  | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |ap_block_state1  |        or|   0|  0|   2|           1|           1|
+    |ap_block_state2  |        or|   0|  0|   2|           1|           1|
+    +-----------------+----------+----+---+----+------------+------------+
+    |Total            |          |   0|  0|   4|           2|           2|
+    +-----------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_NS_fsm                |  14|          3|    1|          3|
+    |ap_done                  |   9|          2|    1|          2|
+    |ipd_x_0_blk_n            |   9|          2|    1|          2|
+    |ipd_x_1_blk_n            |   9|          2|    1|          2|
+    |ipd_x_2_blk_n            |   9|          2|    1|          2|
+    |ipd_x_3_blk_n            |   9|          2|    1|          2|
+    |ipd_x_4_blk_n            |   9|          2|    1|          2|
+    |ipd_x_5_blk_n            |   9|          2|    1|          2|
+    |ipd_x_6_blk_n            |   9|          2|    1|          2|
+    |ipd_x_7_blk_n            |   9|          2|    1|          2|
+    |ipd_x_8_blk_n            |   9|          2|    1|          2|
+    |ipd_x_embedding_0_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_1_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_2_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_3_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_4_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_5_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_6_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_7_blk_n  |   9|          2|    1|          2|
+    |ipd_x_embedding_8_blk_n  |   9|          2|    1|          2|
+    |len_x_0_blk_n            |   9|          2|    1|          2|
+    |len_x_1_blk_n            |   9|          2|    1|          2|
+    |len_x_2_blk_n            |   9|          2|    1|          2|
+    |len_x_3_blk_n            |   9|          2|    1|          2|
+    |len_x_4_blk_n            |   9|          2|    1|          2|
+    |len_x_5_blk_n            |   9|          2|    1|          2|
+    |len_x_6_blk_n            |   9|          2|    1|          2|
+    |len_x_7_blk_n            |   9|          2|    1|          2|
+    |len_x_8_blk_n            |   9|          2|    1|          2|
+    |len_x_embedding_0_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_1_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_2_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_3_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_4_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_5_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_6_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_7_blk_n  |   9|          2|    1|          2|
+    |len_x_embedding_8_blk_n  |   9|          2|    1|          2|
+    |real_start               |   9|          2|    1|          2|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    | 356|         79|   39|         79|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------+---+----+-----+-----------+
+    |      Name      | FF| LUT| Bits| Const Bits|
+    +----------------+---+----+-----+-----------+
+    |ap_CS_fsm       |  2|   0|    2|          0|
+    |ap_done_reg     |  1|   0|    1|          0|
+    |start_once_reg  |  1|   0|    1|          0|
+    +----------------+---+----+-----+-----------+
+    |Total           |  4|   0|    4|          0|
+    +----------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------------------+-----+-----+------------+----------------------------+--------------+
+|             RTL Ports            | Dir | Bits|  Protocol  |        Source Object       |    C Type    |
++----------------------------------+-----+-----+------------+----------------------------+--------------+
+|ap_clk                            |   in|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_rst                            |   in|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_start                          |   in|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|start_full_n                      |   in|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_done                           |  out|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_continue                       |   in|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_idle                           |  out|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|ap_ready                          |  out|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|start_out                         |  out|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|start_write                       |  out|    1|  ap_ctrl_hs|  embedding_layer_stream<9u>|  return value|
+|len_x_0_dout                      |   in|    8|     ap_fifo|                     len_x_0|       pointer|
+|len_x_0_empty_n                   |   in|    1|     ap_fifo|                     len_x_0|       pointer|
+|len_x_0_read                      |  out|    1|     ap_fifo|                     len_x_0|       pointer|
+|len_x_0_num_data_valid            |   in|    3|     ap_fifo|                     len_x_0|       pointer|
+|len_x_0_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_0|       pointer|
+|len_x_1_dout                      |   in|    8|     ap_fifo|                     len_x_1|       pointer|
+|len_x_1_empty_n                   |   in|    1|     ap_fifo|                     len_x_1|       pointer|
+|len_x_1_read                      |  out|    1|     ap_fifo|                     len_x_1|       pointer|
+|len_x_1_num_data_valid            |   in|    3|     ap_fifo|                     len_x_1|       pointer|
+|len_x_1_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_1|       pointer|
+|len_x_2_dout                      |   in|    8|     ap_fifo|                     len_x_2|       pointer|
+|len_x_2_empty_n                   |   in|    1|     ap_fifo|                     len_x_2|       pointer|
+|len_x_2_read                      |  out|    1|     ap_fifo|                     len_x_2|       pointer|
+|len_x_2_num_data_valid            |   in|    3|     ap_fifo|                     len_x_2|       pointer|
+|len_x_2_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_2|       pointer|
+|len_x_3_dout                      |   in|    8|     ap_fifo|                     len_x_3|       pointer|
+|len_x_3_empty_n                   |   in|    1|     ap_fifo|                     len_x_3|       pointer|
+|len_x_3_read                      |  out|    1|     ap_fifo|                     len_x_3|       pointer|
+|len_x_3_num_data_valid            |   in|    3|     ap_fifo|                     len_x_3|       pointer|
+|len_x_3_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_3|       pointer|
+|len_x_4_dout                      |   in|    8|     ap_fifo|                     len_x_4|       pointer|
+|len_x_4_empty_n                   |   in|    1|     ap_fifo|                     len_x_4|       pointer|
+|len_x_4_read                      |  out|    1|     ap_fifo|                     len_x_4|       pointer|
+|len_x_4_num_data_valid            |   in|    3|     ap_fifo|                     len_x_4|       pointer|
+|len_x_4_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_4|       pointer|
+|len_x_5_dout                      |   in|    8|     ap_fifo|                     len_x_5|       pointer|
+|len_x_5_empty_n                   |   in|    1|     ap_fifo|                     len_x_5|       pointer|
+|len_x_5_read                      |  out|    1|     ap_fifo|                     len_x_5|       pointer|
+|len_x_5_num_data_valid            |   in|    3|     ap_fifo|                     len_x_5|       pointer|
+|len_x_5_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_5|       pointer|
+|len_x_6_dout                      |   in|    8|     ap_fifo|                     len_x_6|       pointer|
+|len_x_6_empty_n                   |   in|    1|     ap_fifo|                     len_x_6|       pointer|
+|len_x_6_read                      |  out|    1|     ap_fifo|                     len_x_6|       pointer|
+|len_x_6_num_data_valid            |   in|    3|     ap_fifo|                     len_x_6|       pointer|
+|len_x_6_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_6|       pointer|
+|len_x_7_dout                      |   in|    8|     ap_fifo|                     len_x_7|       pointer|
+|len_x_7_empty_n                   |   in|    1|     ap_fifo|                     len_x_7|       pointer|
+|len_x_7_read                      |  out|    1|     ap_fifo|                     len_x_7|       pointer|
+|len_x_7_num_data_valid            |   in|    3|     ap_fifo|                     len_x_7|       pointer|
+|len_x_7_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_7|       pointer|
+|len_x_8_dout                      |   in|    8|     ap_fifo|                     len_x_8|       pointer|
+|len_x_8_empty_n                   |   in|    1|     ap_fifo|                     len_x_8|       pointer|
+|len_x_8_read                      |  out|    1|     ap_fifo|                     len_x_8|       pointer|
+|len_x_8_num_data_valid            |   in|    3|     ap_fifo|                     len_x_8|       pointer|
+|len_x_8_fifo_cap                  |   in|    3|     ap_fifo|                     len_x_8|       pointer|
+|ipd_x_0_dout                      |   in|    8|     ap_fifo|                     ipd_x_0|       pointer|
+|ipd_x_0_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_0|       pointer|
+|ipd_x_0_read                      |  out|    1|     ap_fifo|                     ipd_x_0|       pointer|
+|ipd_x_0_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_0|       pointer|
+|ipd_x_0_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_0|       pointer|
+|ipd_x_1_dout                      |   in|    8|     ap_fifo|                     ipd_x_1|       pointer|
+|ipd_x_1_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_1|       pointer|
+|ipd_x_1_read                      |  out|    1|     ap_fifo|                     ipd_x_1|       pointer|
+|ipd_x_1_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_1|       pointer|
+|ipd_x_1_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_1|       pointer|
+|ipd_x_2_dout                      |   in|    8|     ap_fifo|                     ipd_x_2|       pointer|
+|ipd_x_2_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_2|       pointer|
+|ipd_x_2_read                      |  out|    1|     ap_fifo|                     ipd_x_2|       pointer|
+|ipd_x_2_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_2|       pointer|
+|ipd_x_2_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_2|       pointer|
+|ipd_x_3_dout                      |   in|    8|     ap_fifo|                     ipd_x_3|       pointer|
+|ipd_x_3_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_3|       pointer|
+|ipd_x_3_read                      |  out|    1|     ap_fifo|                     ipd_x_3|       pointer|
+|ipd_x_3_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_3|       pointer|
+|ipd_x_3_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_3|       pointer|
+|ipd_x_4_dout                      |   in|    8|     ap_fifo|                     ipd_x_4|       pointer|
+|ipd_x_4_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_4|       pointer|
+|ipd_x_4_read                      |  out|    1|     ap_fifo|                     ipd_x_4|       pointer|
+|ipd_x_4_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_4|       pointer|
+|ipd_x_4_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_4|       pointer|
+|ipd_x_5_dout                      |   in|    8|     ap_fifo|                     ipd_x_5|       pointer|
+|ipd_x_5_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_5|       pointer|
+|ipd_x_5_read                      |  out|    1|     ap_fifo|                     ipd_x_5|       pointer|
+|ipd_x_5_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_5|       pointer|
+|ipd_x_5_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_5|       pointer|
+|ipd_x_6_dout                      |   in|    8|     ap_fifo|                     ipd_x_6|       pointer|
+|ipd_x_6_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_6|       pointer|
+|ipd_x_6_read                      |  out|    1|     ap_fifo|                     ipd_x_6|       pointer|
+|ipd_x_6_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_6|       pointer|
+|ipd_x_6_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_6|       pointer|
+|ipd_x_7_dout                      |   in|    8|     ap_fifo|                     ipd_x_7|       pointer|
+|ipd_x_7_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_7|       pointer|
+|ipd_x_7_read                      |  out|    1|     ap_fifo|                     ipd_x_7|       pointer|
+|ipd_x_7_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_7|       pointer|
+|ipd_x_7_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_7|       pointer|
+|ipd_x_8_dout                      |   in|    8|     ap_fifo|                     ipd_x_8|       pointer|
+|ipd_x_8_empty_n                   |   in|    1|     ap_fifo|                     ipd_x_8|       pointer|
+|ipd_x_8_read                      |  out|    1|     ap_fifo|                     ipd_x_8|       pointer|
+|ipd_x_8_num_data_valid            |   in|    3|     ap_fifo|                     ipd_x_8|       pointer|
+|ipd_x_8_fifo_cap                  |   in|    3|     ap_fifo|                     ipd_x_8|       pointer|
+|len_x_embedding_0_din             |  out|  320|     ap_fifo|           len_x_embedding_0|       pointer|
+|len_x_embedding_0_full_n          |   in|    1|     ap_fifo|           len_x_embedding_0|       pointer|
+|len_x_embedding_0_write           |  out|    1|     ap_fifo|           len_x_embedding_0|       pointer|
+|len_x_embedding_0_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_0|       pointer|
+|len_x_embedding_0_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_0|       pointer|
+|len_x_embedding_1_din             |  out|  320|     ap_fifo|           len_x_embedding_1|       pointer|
+|len_x_embedding_1_full_n          |   in|    1|     ap_fifo|           len_x_embedding_1|       pointer|
+|len_x_embedding_1_write           |  out|    1|     ap_fifo|           len_x_embedding_1|       pointer|
+|len_x_embedding_1_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_1|       pointer|
+|len_x_embedding_1_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_1|       pointer|
+|len_x_embedding_2_din             |  out|  320|     ap_fifo|           len_x_embedding_2|       pointer|
+|len_x_embedding_2_full_n          |   in|    1|     ap_fifo|           len_x_embedding_2|       pointer|
+|len_x_embedding_2_write           |  out|    1|     ap_fifo|           len_x_embedding_2|       pointer|
+|len_x_embedding_2_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_2|       pointer|
+|len_x_embedding_2_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_2|       pointer|
+|len_x_embedding_3_din             |  out|  320|     ap_fifo|           len_x_embedding_3|       pointer|
+|len_x_embedding_3_full_n          |   in|    1|     ap_fifo|           len_x_embedding_3|       pointer|
+|len_x_embedding_3_write           |  out|    1|     ap_fifo|           len_x_embedding_3|       pointer|
+|len_x_embedding_3_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_3|       pointer|
+|len_x_embedding_3_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_3|       pointer|
+|len_x_embedding_4_din             |  out|  320|     ap_fifo|           len_x_embedding_4|       pointer|
+|len_x_embedding_4_full_n          |   in|    1|     ap_fifo|           len_x_embedding_4|       pointer|
+|len_x_embedding_4_write           |  out|    1|     ap_fifo|           len_x_embedding_4|       pointer|
+|len_x_embedding_4_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_4|       pointer|
+|len_x_embedding_4_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_4|       pointer|
+|len_x_embedding_5_din             |  out|  320|     ap_fifo|           len_x_embedding_5|       pointer|
+|len_x_embedding_5_full_n          |   in|    1|     ap_fifo|           len_x_embedding_5|       pointer|
+|len_x_embedding_5_write           |  out|    1|     ap_fifo|           len_x_embedding_5|       pointer|
+|len_x_embedding_5_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_5|       pointer|
+|len_x_embedding_5_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_5|       pointer|
+|len_x_embedding_6_din             |  out|  320|     ap_fifo|           len_x_embedding_6|       pointer|
+|len_x_embedding_6_full_n          |   in|    1|     ap_fifo|           len_x_embedding_6|       pointer|
+|len_x_embedding_6_write           |  out|    1|     ap_fifo|           len_x_embedding_6|       pointer|
+|len_x_embedding_6_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_6|       pointer|
+|len_x_embedding_6_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_6|       pointer|
+|len_x_embedding_7_din             |  out|  320|     ap_fifo|           len_x_embedding_7|       pointer|
+|len_x_embedding_7_full_n          |   in|    1|     ap_fifo|           len_x_embedding_7|       pointer|
+|len_x_embedding_7_write           |  out|    1|     ap_fifo|           len_x_embedding_7|       pointer|
+|len_x_embedding_7_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_7|       pointer|
+|len_x_embedding_7_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_7|       pointer|
+|len_x_embedding_8_din             |  out|  320|     ap_fifo|           len_x_embedding_8|       pointer|
+|len_x_embedding_8_full_n          |   in|    1|     ap_fifo|           len_x_embedding_8|       pointer|
+|len_x_embedding_8_write           |  out|    1|     ap_fifo|           len_x_embedding_8|       pointer|
+|len_x_embedding_8_num_data_valid  |   in|    3|     ap_fifo|           len_x_embedding_8|       pointer|
+|len_x_embedding_8_fifo_cap        |   in|    3|     ap_fifo|           len_x_embedding_8|       pointer|
+|ipd_x_embedding_0_din             |  out|  256|     ap_fifo|           ipd_x_embedding_0|       pointer|
+|ipd_x_embedding_0_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_0|       pointer|
+|ipd_x_embedding_0_write           |  out|    1|     ap_fifo|           ipd_x_embedding_0|       pointer|
+|ipd_x_embedding_0_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_0|       pointer|
+|ipd_x_embedding_0_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_0|       pointer|
+|ipd_x_embedding_1_din             |  out|  256|     ap_fifo|           ipd_x_embedding_1|       pointer|
+|ipd_x_embedding_1_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_1|       pointer|
+|ipd_x_embedding_1_write           |  out|    1|     ap_fifo|           ipd_x_embedding_1|       pointer|
+|ipd_x_embedding_1_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_1|       pointer|
+|ipd_x_embedding_1_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_1|       pointer|
+|ipd_x_embedding_2_din             |  out|  256|     ap_fifo|           ipd_x_embedding_2|       pointer|
+|ipd_x_embedding_2_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_2|       pointer|
+|ipd_x_embedding_2_write           |  out|    1|     ap_fifo|           ipd_x_embedding_2|       pointer|
+|ipd_x_embedding_2_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_2|       pointer|
+|ipd_x_embedding_2_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_2|       pointer|
+|ipd_x_embedding_3_din             |  out|  256|     ap_fifo|           ipd_x_embedding_3|       pointer|
+|ipd_x_embedding_3_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_3|       pointer|
+|ipd_x_embedding_3_write           |  out|    1|     ap_fifo|           ipd_x_embedding_3|       pointer|
+|ipd_x_embedding_3_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_3|       pointer|
+|ipd_x_embedding_3_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_3|       pointer|
+|ipd_x_embedding_4_din             |  out|  256|     ap_fifo|           ipd_x_embedding_4|       pointer|
+|ipd_x_embedding_4_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_4|       pointer|
+|ipd_x_embedding_4_write           |  out|    1|     ap_fifo|           ipd_x_embedding_4|       pointer|
+|ipd_x_embedding_4_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_4|       pointer|
+|ipd_x_embedding_4_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_4|       pointer|
+|ipd_x_embedding_5_din             |  out|  256|     ap_fifo|           ipd_x_embedding_5|       pointer|
+|ipd_x_embedding_5_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_5|       pointer|
+|ipd_x_embedding_5_write           |  out|    1|     ap_fifo|           ipd_x_embedding_5|       pointer|
+|ipd_x_embedding_5_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_5|       pointer|
+|ipd_x_embedding_5_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_5|       pointer|
+|ipd_x_embedding_6_din             |  out|  256|     ap_fifo|           ipd_x_embedding_6|       pointer|
+|ipd_x_embedding_6_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_6|       pointer|
+|ipd_x_embedding_6_write           |  out|    1|     ap_fifo|           ipd_x_embedding_6|       pointer|
+|ipd_x_embedding_6_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_6|       pointer|
+|ipd_x_embedding_6_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_6|       pointer|
+|ipd_x_embedding_7_din             |  out|  256|     ap_fifo|           ipd_x_embedding_7|       pointer|
+|ipd_x_embedding_7_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_7|       pointer|
+|ipd_x_embedding_7_write           |  out|    1|     ap_fifo|           ipd_x_embedding_7|       pointer|
+|ipd_x_embedding_7_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_7|       pointer|
+|ipd_x_embedding_7_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_7|       pointer|
+|ipd_x_embedding_8_din             |  out|  256|     ap_fifo|           ipd_x_embedding_8|       pointer|
+|ipd_x_embedding_8_full_n          |   in|    1|     ap_fifo|           ipd_x_embedding_8|       pointer|
+|ipd_x_embedding_8_write           |  out|    1|     ap_fifo|           ipd_x_embedding_8|       pointer|
+|ipd_x_embedding_8_num_data_valid  |   in|    3|     ap_fifo|           ipd_x_embedding_8|       pointer|
+|ipd_x_embedding_8_fifo_cap        |   in|    3|     ap_fifo|           ipd_x_embedding_8|       pointer|
++----------------------------------+-----+-----+------------+----------------------------+--------------+
+

@@ -1,0 +1,1695 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/sidejob/ethernet_NN/NN/hls_component/hls_component 
+INFO: [HLS 200-1611] Setting target device to 'xczu19eg-ffvc1760-2-i'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.cpp' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Coeff.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Coeff.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ComponentStream.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/ComponentStream.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Type.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Type.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ComponentsStream.cpp' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/ComponentsStream.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=CNN_stream' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu19eg-ffvc1760-2-i' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'clock=200mhz' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(14)
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(5)
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 27 01:41:19 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/hls_data.json outdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip srcdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 80 verilog file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 56 vhdl file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+Generating 5 subcores in D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/ip.tmp:
+impl/misc/CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip.tcl
+impl/misc/CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Generating CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip via file impl/misc/CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip via file impl/misc/CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip via file impl/misc/CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip via file impl/misc/CNN_stream_flog_32ns_32ns_32_16_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: Done generating CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip.tcl
+INFO: Generating CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip via file impl/misc/CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip'...
+INFO: Done generating CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip via file impl/misc/CNN_stream_sitofp_32ns_32_6_no_dsp_1_ip.tcl
+INFO: Import ports from HDL: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl/CNN_stream.vhd (CNN_stream)
+INFO: Add axi4stream interface din_0_0
+INFO: Add axi4stream interface din_0_1
+INFO: Add axi4stream interface din_1_0
+INFO: Add axi4stream interface din_1_1
+INFO: Add axi4stream interface din_2_0
+INFO: Add axi4stream interface din_2_1
+INFO: Add axi4stream interface din_3_0
+INFO: Add axi4stream interface din_3_1
+INFO: Add axi4stream interface din_4_0
+INFO: Add axi4stream interface din_4_1
+INFO: Add axi4stream interface din_5_0
+INFO: Add axi4stream interface din_5_1
+INFO: Add axi4stream interface din_6_0
+INFO: Add axi4stream interface din_6_1
+INFO: Add axi4stream interface din_7_0
+INFO: Add axi4stream interface din_7_1
+INFO: Add axi4stream interface din_8_0
+INFO: Add axi4stream interface din_8_1
+INFO: Add ap_fifo interface dout_0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add ap_fifo interface dout_1
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst_n
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/component.xml
+INFO: Created IP archive D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_CNN_stream_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 01:41:32 2025...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+
+D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog>D:/Xilinx/Vivado/2024.2/bin/vivado  -mode batch -source run_vivado.tcl   || exit $? 
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 27 01:41:34 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module CNN_stream
+## set language verilog
+## set family zynquplus
+## set device xczu19eg
+## set package -ffvc1760
+## set speed -2-i
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false 
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "5.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set other_clks_freq_hz {}
+# set ip_vlnv xilinx.com:hls:CNN_stream:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project hls_component
+# dict set report_options hls_solution hls
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options topmodule "CNN_stream"
+# dict set report_options funcmodules {CNN_stream_feature_separate_layer_stream_9u_s CNN_stream_embedding_layer_stream_9u_s CNN_stream_feature_concate_layer_stream_9u_s CNN_stream_fully_connect_layer_stream3_9u_s CNN_stream_conv2d_3_stream_layer_9u_s CNN_stream_conv2d_3_stream_layer_post_9u_s CNN_stream_conv2d_4_stream_layer_9u_s CNN_stream_conv2d_4_stream_layer_post_9u_s CNN_stream_conv2d_5_stream_layer_9u_s CNN_stream_conv2d_5_stream_layer_post_9u_s CNN_stream_reshape_concate_layer_stream CNN_stream_fully_connect2_layer_stream CNN_stream_l_softmax_layer_stream}
+# dict set report_options bindmodules {CNN_stream_regslice_both CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_0_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_1_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_2_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_3_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_4_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_5_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_6_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_7_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_8_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26len_embedding_table_stream_9_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_0_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_1_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_2_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_3_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_4_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_5_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_6_ROM_AUTO_1R CNN_stream_embedding_layer_stream_9u_s_p_ZL26ipd_embedding_table_stream_7_ROM_AUTO_1R CNN_stream_flow_control_loop_pipe CNN_stream_fadd_32ns_32ns_32_8_full_dsp_1 CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1 CNN_stream_sitofp_32ns_32_6_no_dsp_1 CNN_stream_flog_32ns_32ns_32_16_full_dsp_1 CNN_stream_fexp_32ns_32ns_32_13_full_dsp_1 CNN_stream_fifo_w32_d4_S CNN_stream_fifo_w320_d4_A CNN_stream_fifo_w256_d4_S CNN_stream_fifo_w576_d4_A CNN_stream_fifo_w1152_d4_A CNN_stream_start_for_embedding_layer_stream_9u_U0 CNN_stream_start_for_feature_concate_layer_stream_9u_U0 CNN_stream_start_for_fully_connect_layer_stream3_9u_U0 CNN_stream_start_for_conv2d_3_stream_layer_9u_U0 CNN_stream_start_for_conv2d_4_stream_layer_9u_U0 CNN_stream_start_for_conv2d_5_stream_layer_9u_U0 CNN_stream_start_for_conv2d_3_stream_layer_post_9u_U0 CNN_stream_start_for_reshape_concate_layer_stream_U0 CNN_stream_start_for_conv2d_4_stream_layer_post_9u_U0 CNN_stream_start_for_conv2d_5_stream_layer_post_9u_U0 CNN_stream_start_for_fully_connect2_layer_stream_U0 CNN_stream_start_for_l_softmax_layer_stream_U0}
+# dict set report_options max_module_depth 6
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+# create_bd_design bd_0
+Wrote  : <D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { $target_clk_freq_hz ne "" } { 
+#   foreach bd_clk_port $bd_clk_ports {
+#     # Remove "_0" suffix from BD ports & interfaces so they match IP ports 
+#     set clk_name [regsub {_0$} [get_property name $bd_clk_port] {}]
+#     set port_freq_hz $target_clk_freq_hz
+#     if { [dict exists $other_clks_freq_hz $clk_name] } {
+#         set port_freq_hz [dict get $other_clks_freq_hz $clk_name]
+#     }
+#     set_property CONFIG.FREQ_HZ $port_freq_hz $bd_clk_port
+#   }
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Wrote  : <D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2025-04-27 01:41:48 +0800
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Sun Apr 27 01:41:48 2025] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Sun Apr 27 01:41:48 2025] Launched synth_1...
+Run output will be captured here: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/runme.log
+[Sun Apr 27 01:41:48 2025] Waiting for synth_1 to finish...
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+*** Running vivado
+    with args -log bd_0_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_wrapper.tcl
+
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 27 01:45:07 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 59663
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.cache/ip 
+Command: synth_design -top bd_0_wrapper -part xczu19eg-ffvc1760-2-i -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17964
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1886.754 ; gain = 199.988
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_0_wrapper' [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0' [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6157] synthesizing module 'bd_0_hls_inst_0' [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-14748-BozhiDesktop/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_hls_inst_0' (0#1) [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/.Xil/Vivado-14748-BozhiDesktop/realtime/bd_0_hls_inst_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0' (0#1) [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'bd_0_wrapper' (0#1) [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1998.867 ; gain = 312.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1998.867 ; gain = 312.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1998.867 ; gain = 312.102
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1998.867 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Finished Parsing XDC File [d:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0/bd_0_hls_inst_0_in_context.xdc] for cell 'bd_0_i/hls_inst'
+Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/CNN_stream.xdc]
+Finished Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/CNN_stream.xdc]
+Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2033.527 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2033.527 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2033.527 ; gain = 346.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2033.527 ; gain = 346.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for bd_0_i/hls_inst. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2033.527 ; gain = 346.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 2033.527 ; gain = 346.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 2033.527 ; gain = 346.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2736.312 ; gain = 1049.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2736.387 ; gain = 1049.621
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2746.383 ; gain = 1059.617
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------+----------+
+|      |BlackBox name   |Instances |
++------+----------------+----------+
+|1     |bd_0_hls_inst_0 |         1|
++------+----------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |bd_0_hls_inst |     1|
++------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 2962.719 ; gain = 1241.293
+Synthesis Optimization Complete : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2962.719 ; gain = 1275.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2962.719 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2962.719 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 7eaff635
+INFO: [Common 17-83] Releasing license: Synthesis
+22 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2962.719 ; gain = 2498.871
+INFO: [Common 17-1381] The checkpoint 'D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/bd_0_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_synth.rpt -pb bd_0_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 01:45:47 2025...
+[Sun Apr 27 01:45:50 2025] synth_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:04:02 . Memory (MB): peak = 490.969 ; gain = 0.000
+TIMESTAMP: HLS-REPORT: synthesis open_run: 2025-04-27 01:45:50 +0800
+INFO: HLS-REPORT: Opening synthesis design database: open_run synth_1
+Design is defaulting to impl run constrset: constrs_1
+Design is defaulting to synth run part: xczu19eg-ffvc1760-2-i
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: [Project 1-454] Reading design checkpoint 'd:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/bd_0_hls_inst_0.dcp' for cell 'bd_0_i/hls_inst'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.124 . Memory (MB): peak = 1737.930 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 472 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/CNN_stream.xdc]
+Finished Parsing XDC File [D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/CNN_stream.xdc]
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2183.586 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 20 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 42 instances
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2183.586 ; gain = 1692.617
+TIMESTAMP: HLS-REPORT: synthesis generate_reports_vivado: 2025-04-27 01:46:07 +0800
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/CNN_stream_utilization_synth.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/CNN_stream_utilization_hierarchical_synth.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/CNN_stream_timing_synth.rpt
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+report_timing_summary: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 3792.883 ; gain = 1608.469
+INFO: HLS-REPORT: Running report: report_power -file ./report/CNN_stream_power_synth.rpt -xpe ./CNN_stream_power.xpe
+Command: report_power -file ./report/CNN_stream_power_synth.rpt -xpe ./CNN_stream_power.xpe
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+12 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/CNN_stream_timing_paths_synth.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/CNN_stream_design_analysis_synth.rpt
+INFO: [Implflow 30-839]  
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report synth -file ./report/CNN_stream_failfast_synth.rpt
+ -I- design metrics completed in 0 seconds
+ -I- DONT_TOUCH metric completed in 1 seconds
+ -I- MARK_DEBUG metric completed in 0 seconds
+ -I- utilization metrics completed in 0 seconds
+ -I- control set metrics completed in 0 seconds
+ -I- methodology check metrics completed in 1 seconds
+ -I- average fanout metrics completed in 2 seconds (0 modules)
+ -I- non-FD high fanout nets completed in 1 seconds
+ -I- path budgeting metrics completed in 1 seconds
+#  +-----------------------------------------------------------------------------------------+
+#  | Design Summary                                                                          |
+#  | design_1                                                                                |
+#  | xczu19eg-ffvc1760-2-i                                                                   |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Criteria                                                  | Guideline | Actual | Status |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | LUT                                                       | 70%       | 1.85%  | OK     |
+#  | FD                                                        | 50%       | 0.61%  | OK     |
+#  | LUTRAM+SRL                                                | 25%       | 1.54%  | OK     |
+#  | CARRY8                                                    | 25%       | 0.30%  | OK     |
+#  | MUXF7                                                     | 15%       | 0.08%  | OK     |
+#  | DSP                                                       | 80%       | 1.22%  | OK     |
+#  | RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+#  | URAM                                                      | 80%       | 0.00%  | OK     |
+#  | DSP+RAMB+URAM (Avg)                                       | 70%       | 1.22%  | OK     |
+#  | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+#  | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+#  | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+#  | Control Sets                                              | 9801      | 594    | OK     |
+#  | Average Fanout for modules > 100k cells                   | 4         | 2.18   | OK     |
+#  | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+#  | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+#  | TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+#  | TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+#  | TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+#  | TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Number of paths above max LUT budgeting (0.300ns)         | 0         | 0      | OK     |
+#  | Number of paths above max Net budgeting (0.208ns)         | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+ -I- Generated file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/report/CNN_stream_failfast_synth.rpt
+ -I- Number of criteria to review: 0
+ -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
+ -I- report_failfast completed in 6 seconds
+TIMESTAMP: HLS-REPORT: synthesis gen_data_dict_vivado: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synth extract_util_hier: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synth get_cell_hier_data: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synth get_timing_paths: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synth process timing paths: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synth get_all_vv_rpt_files: 2025-04-27 01:46:30 +0800
+TIMESTAMP: HLS-REPORT: synthesis write_reports_vivado: 2025-04-27 01:46:31 +0800
+HLS EXTRACTION: synth area_totals:  0 522720 1045440 1968 1968 0 128
+HLS EXTRACTION: synth area_current: 0 9687 6347 24 0 0 2151 0 0 0
+HLS EXTRACTION: synth resources_dict: AVAIL_LUT 522720 LUT 9687 AVAIL_FF 1045440 FF 6347 AVAIL_DSP 1968 DSP 24 AVAIL_BRAM 1968 BRAM 0 AVAIL_URAM 128 URAM 0 LATCH 0 SRL 2151 AVAIL_CLB 0 CLB 0
+INFO: HLS-REPORT: generated D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/report/vivado_syn.xml
+INFO: HLS-REPORT: generated D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/report/verilog/CNN_stream_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2024.2
+Project:             hls_component
+Solution:            hls
+Device target:       xczu19eg-ffvc1760-2-i
+Report date:         Sun Apr 27 01:46:31 +0800 2025
+
+#=== Post-Synthesis Resource usage ===
+SLICE:            0
+LUT:           9687
+FF:            6347
+DSP:             24
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:           2151
+CLB:              0
+
+#=== Final timing ===
+CP required:                     5.000
+CP achieved post-synthesis:      2.348
+Timing met
+
+TIMESTAMP: HLS-REPORT: synthesis end: 2025-04-27 01:46:31 +0800
+# if { $has_impl } {
+#   # launch run impl
+#   if { [llength $impl_props] } {
+#     set_property -dict $impl_props [get_runs impl_1]
+#   }
+#   launch_runs impl_1
+#   wait_on_run impl_1
+#   # impl reports
+#   hls_vivado_reports_impl impl_1 $report_options
+# }
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3792.883 ; gain = 0.000
+WARNING: [Common 17-210] 'write_hwdef' is deprecated.
+[Sun Apr 27 01:46:32 2025] Launched impl_1...
+Run output will be captured here: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/runme.log
+[Sun Apr 27 01:46:32 2025] Waiting for impl_1 to finish...
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+*** Running vivado
+    with args -log bd_0_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source bd_0_wrapper.tcl -notrace
+
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Sun Apr 27 01:46:40 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source bd_0_wrapper.tcl -notrace
+INFO: Dispatch client connection id - 59663
+Command: open_checkpoint D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper.dcp
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.123 . Memory (MB): peak = 1675.410 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 472 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1675.410 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2464.734 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 20 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 42 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:19 ; elapsed = 00:00:21 . Memory (MB): peak = 2464.734 ; gain = 2159.211
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.cache/ip 
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu19eg'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.915 . Memory (MB): peak = 2515.367 ; gain = 42.840
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.786 . Memory (MB): peak = 2593.027 ; gain = 77.660
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.025 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.316 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.339 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1256e11dd
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.340 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 1 inverters resulting in an inversion of 182 pins
+INFO: [Opt 31-138] Pushed 8 inverter(s) to 2844 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 120d9e11b
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.713 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Retarget | Checksum: 120d9e11b
+INFO: [Opt 31-389] Phase Retarget created 109 cells and removed 128 cells
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 11fe50c94
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Constant propagation | Checksum: 11fe50c94
+INFO: [Opt 31-389] Phase Constant propagation created 33 cells and removed 3191 cells
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3018.465 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Phase 5 Sweep | Checksum: ca8c9d2d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Sweep | Checksum: ca8c9d2d
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 357 cells
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-1077] Phase BUFG optimization inserted 0 global clock buffer(s) for CLOCK_LOW_FANOUT.
+Phase 6 BUFG optimization | Checksum: ca8c9d2d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3018.465 ; gain = 0.000
+BUFG optimization | Checksum: ca8c9d2d
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: ca8c9d2d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Shift Register Optimization | Checksum: ca8c9d2d
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: ca8c9d2d
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Post Processing Netlist | Checksum: ca8c9d2d
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Phase 9 Finalization | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             109  |             128  |                                              0  |
+|  Constant propagation         |              33  |            3191  |                                              0  |
+|  Sweep                        |               0  |             357  |                                              0  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                              0  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+Ending Power Optimization Task | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3018.465 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3018.465 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 2243a53db
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3018.465 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3018.465 ; gain = 552.738
+INFO: [Vivado 12-24828] Executing command : report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+Command: report_drc -file bd_0_wrapper_drc_opted.rpt -pb bd_0_wrapper_drc_opted.pb -rpx bd_0_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 3036.305 ; gain = 10.062
+INFO: [Common 17-1381] The checkpoint 'D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_opt.dcp' has been generated.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu19eg'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3046.359 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 15ae82aba
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 3046.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3046.359 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 14984fd11
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3967.422 ; gain = 921.062
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 2177e26d8
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3967.422 ; gain = 921.062
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 2177e26d8
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3967.422 ; gain = 921.062
+Phase 1 Placer Initialization | Checksum: 2177e26d8
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 3967.422 ; gain = 921.062
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+
+Phase 2.1.1 Partition Driven Placement
+
+Phase 2.1.1.1 PBP: Partition Driven Placement
+Phase 2.1.1.1 PBP: Partition Driven Placement | Checksum: 1fa668e58
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 3967.422 ; gain = 921.062
+
+Phase 2.1.1.2 PBP: Clock Region Placement
+INFO: [Place 30-3164] Check ILP status : ILP-based clock placer is skipped.
+Phase 2.1.1.2 PBP: Clock Region Placement | Checksum: 1797a7234
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 3967.422 ; gain = 921.062
+
+Phase 2.1.1.3 PBP: Compute Congestion
+Phase 2.1.1.3 PBP: Compute Congestion | Checksum: 1797a7234
+
+Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 4043.473 ; gain = 997.113
+
+Phase 2.1.1.4 PBP: UpdateTiming
+Phase 2.1.1.4 PBP: UpdateTiming | Checksum: 23bd56296
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+
+Phase 2.1.1.5 PBP: Add part constraints
+Phase 2.1.1.5 PBP: Add part constraints | Checksum: 23bd56296
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+Phase 2.1.1 Partition Driven Placement | Checksum: 23bd56296
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+Phase 2.1 Floorplanning | Checksum: 22395b371
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 22395b371
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 22395b371
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:20 . Memory (MB): peak = 4045.059 ; gain = 998.699
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 1f23bf174
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:00:38 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1f23bf174
+
+Time (s): cpu = 00:00:58 ; elapsed = 00:00:38 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 0 LUTNM shape to break, 608 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 0, two critical 0, total 0, new lutff created 0
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 282 nets or LUTs. Breaked 0 LUT, combined 282 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-1030] Pass 1. Identified 3 candidate driver sets for equivalent driver rewiring.
+INFO: [Physopt 32-661] Optimized 3 nets.  Re-placed 6 instances.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 3 nets or cells. Created 0 new cell, deleted 0 existing cell and moved 6 existing cells
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 4199.711 ; gain = 0.000
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-670] No setup violation found.  DSP Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register to Pipeline Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  Shift Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  BRAM Register Optimization was not performed.
+INFO: [Physopt 32-670] No setup violation found.  URAM Register Optimization was not performed.
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4199.711 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            0  |            282  |                   282  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Equivalent Driver Rewiring                       |            0  |              0  |                     3  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           0  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            0  |            282  |                   285  |           0  |           5  |  00:00:00  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 24650fde0
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:39 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+Phase 2.5 Global Place Phase2 | Checksum: 289377586
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:45 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+Phase 2 Global Placement | Checksum: 289377586
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:45 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 1fc89d645
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:50 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2cd693120
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:51 . Memory (MB): peak = 4199.711 ; gain = 1153.352
+
+Phase 3.3 Small Shape DP
+
+Phase 3.3.1 Small Shape Clustering
+Phase 3.3.1 Small Shape Clustering | Checksum: 26e8a0dcc
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:01 . Memory (MB): peak = 4209.262 ; gain = 1162.902
+
+Phase 3.3.2 Slice Area Swap
+
+Phase 3.3.2.1 Slice Area Swap Initial
+Phase 3.3.2.1 Slice Area Swap Initial | Checksum: 28cd79e28
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:07 . Memory (MB): peak = 4229.988 ; gain = 1183.629
+Phase 3.3.2 Slice Area Swap | Checksum: 28cd79e28
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:07 . Memory (MB): peak = 4236.949 ; gain = 1190.590
+Phase 3.3 Small Shape DP | Checksum: 20cd984f6
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:17 . Memory (MB): peak = 4242.414 ; gain = 1196.055
+
+Phase 3.4 Re-assign LUT pins
+Phase 3.4 Re-assign LUT pins | Checksum: 1efb56ffb
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:18 . Memory (MB): peak = 4242.414 ; gain = 1196.055
+
+Phase 3.5 Pipeline Register Optimization
+Phase 3.5 Pipeline Register Optimization | Checksum: 2b329fa5a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:18 . Memory (MB): peak = 4242.414 ; gain = 1196.055
+Phase 3 Detail Placement | Checksum: 2b329fa5a
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:18 . Memory (MB): peak = 4242.414 ; gain = 1196.055
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 266247d31
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.058 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 1269dd12a
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.159 . Memory (MB): peak = 4277.969 ; gain = 0.000
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Place 30-3162] Check ILP status : ILP-based clock placer completed successfully.
+INFO: [Place 46-35] Processed net bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fadd_32ns_32ns_32_8_full_dsp_1_U797/ce_r, inserted BUFG to drive 1597 loads.
+INFO: [Place 46-45] Replicated bufg driver bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fadd_32ns_32ns_32_8_full_dsp_1_U797/ce_r_reg_replica
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 1, Replicated BUFG Driver: 1, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 21e55cb01
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 4280.992 ; gain = 3.023
+Phase 4.1.1.1 BUFG Insertion | Checksum: 215e00dda
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:27 . Memory (MB): peak = 4280.992 ; gain = 1234.633
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.058. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 26805946b
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:27 . Memory (MB): peak = 4280.992 ; gain = 1234.633
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:27 . Memory (MB): peak = 4280.992 ; gain = 1234.633
+Phase 4.1 Post Commit Optimization | Checksum: 26805946b
+
+Time (s): cpu = 00:02:25 ; elapsed = 00:01:27 . Memory (MB): peak = 4280.992 ; gain = 1234.633
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 4295.906 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1bde40235
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ________________________________________________________________________
+|           | Global Congestion | Long Congestion   | Short Congestion  |
+| Direction | Region Size       | Region Size       | Region Size       |
+|___________|___________________|___________________|___________________|
+|      North|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|      South|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       East|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+|       West|                1x1|                1x1|                1x1|
+|___________|___________________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 1bde40235
+
+Time (s): cpu = 00:02:40 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+Phase 4.3 Placer Reporting | Checksum: 1bde40235
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 4296.137 ; gain = 0.000
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c336c690
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+Ending Placer Task | Checksum: 122b58fe8
+
+Time (s): cpu = 00:02:41 ; elapsed = 00:01:39 . Memory (MB): peak = 4296.137 ; gain = 1249.777
+79 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:45 ; elapsed = 00:01:41 . Memory (MB): peak = 4296.137 ; gain = 1257.711
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file bd_0_wrapper_utilization_placed.rpt -pb bd_0_wrapper_utilization_placed.pb
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 4296.137 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_io -file bd_0_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.164 . Memory (MB): peak = 4296.137 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.660 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.802 . Memory (MB): peak = 4296.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_placed.dcp' has been generated.
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu19eg'
+
+Starting Initial Update Timing Task
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 4296.137 ; gain = 0.000
+INFO: [Vivado_Tcl 4-2279] Estimated Timing Summary | WNS= 2.058 | TNS= 0.000 | 
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. All physical synthesis setup optimizations will be skipped.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+90 Infos, 6 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.625 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 4296.137 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.730 . Memory (MB): peak = 4296.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_physopt.dcp' has been generated.
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xczu19eg'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: bc53a01d ConstDB: 0 ShapeSum: 6401c946 RouteDB: 2602685
+Nodegraph reading from file.  Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.873 . Memory (MB): peak = 4296.137 ; gain = 0.000
+WARNING: [Route 35-197] Clock port "ap_clk" does not have an associated HD.CLK_SRC. Without this constraint, timing analysis may not be accurate and upstream checks cannot be done to ensure correct clock placement.
+WARNING: [Route 35-198] Port "ap_rst_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_rst_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_0_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_0_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_1_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_1_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_0_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_0_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_1_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_1_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_2_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_2_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_4_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_4_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_3_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_3_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_5_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_5_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_5_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_5_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_4_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_4_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_8_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_8_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "ap_ctrl_start" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "ap_ctrl_start". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_2_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_2_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_7_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_7_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_8_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_8_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_3_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_3_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_7_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_7_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_6_0_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_6_0_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "din_6_1_tvalid" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "din_6_1_tvalid". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "dout_0_full_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "dout_0_full_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+WARNING: [Route 35-198] Port "dout_1_full_n" does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal "dout_1_full_n". Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.
+Post Restoration Checksum: NetGraph: efae64a2 | NumContArr: eefd9cac | Constraints: a20388e5 | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 3435884d0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4296.137 ; gain = 0.000
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 3435884d0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4296.137 ; gain = 0.000
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 3435884d0
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 4296.137 ; gain = 0.000
+
+Phase 2.3 Global Clock Net Routing
+ Number of Nodes with overlaps = 0
+Phase 2.3 Global Clock Net Routing | Checksum: 2ea4d1609
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 4409.766 ; gain = 113.629
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 2484cba88
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:09 . Memory (MB): peak = 4409.766 ; gain = 113.629
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.093  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 11818
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 10167
+  Number of Partially Routed Nets     = 1651
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 2e7b07dcb
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 2e7b07dcb
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:11 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 13667a044
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4467.246 ; gain = 171.109
+Phase 4 Initial Routing | Checksum: 119695d36
+
+Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 1588
+ Number of Nodes with overlaps = 67
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.455  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+
+Phase 5.1 Global Iteration 0 | Checksum: 298e1eef8
+
+Time (s): cpu = 00:00:26 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 5.2 Additional Iteration for Hold
+Phase 5.2 Additional Iteration for Hold | Checksum: 22975f4b9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+Phase 5 Rip-up And Reroute | Checksum: 22975f4b9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 22975f4b9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 22975f4b9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+Phase 6 Delay and Skew Optimization | Checksum: 22975f4b9
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:18 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.455  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 3079f63a1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 4467.246 ; gain = 171.109
+Phase 7 Post Hold Fix | Checksum: 3079f63a1
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:19 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 8 Leaf Clock Prog Delay Opt
+Phase 8 Leaf Clock Prog Delay Opt | Checksum: 288015891
+
+Time (s): cpu = 00:00:29 ; elapsed = 00:00:20 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 9 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.154673 %
+  Global Horizontal Routing Utilization  = 0.228484 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 9 Route finalize | Checksum: 288015891
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 10 Verifying routed nets
+
+ Verification completed successfully
+Phase 10 Verifying routed nets | Checksum: 288015891
+
+Time (s): cpu = 00:00:30 ; elapsed = 00:00:20 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 11 Depositing Routes
+Phase 11 Depositing Routes | Checksum: 288015891
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 12 Resolve XTalk
+Phase 12 Resolve XTalk | Checksum: 288015891
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 13 Post Process Routing
+Phase 13 Post Process Routing | Checksum: 288015891
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Phase 14 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.455  | TNS=0.000  | WHS=0.033  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 14 Post Router Timing | Checksum: 288015891
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+Total Elapsed time in route_design: 20.738 secs
+
+Phase 15 Post-Route Event Processing
+Phase 15 Post-Route Event Processing | Checksum: acabb7bd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: acabb7bd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+101 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:21 . Memory (MB): peak = 4467.246 ; gain = 171.109
+INFO: [Vivado 12-24828] Executing command : report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+Command: report_drc -file bd_0_wrapper_drc_routed.rpt -pb bd_0_wrapper_drc_routed.pb -rpx bd_0_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file bd_0_wrapper_methodology_drc_routed.rpt -pb bd_0_wrapper_methodology_drc_routed.pb -rpx bd_0_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: [DRC 23-133] Running Methodology with 2 threads
+WARNING: [DRC 23-814] Not all possible (connectivity based) DRCs may have been run because this design is seen as Out of Context.
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file bd_0_wrapper_timing_summary_routed.rpt -pb bd_0_wrapper_timing_summary_routed.pb -rpx bd_0_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file bd_0_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file bd_0_wrapper_route_status.rpt -pb bd_0_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
+Command: report_power -file bd_0_wrapper_power_routed.rpt -pb bd_0_wrapper_power_summary_routed.pb -rpx bd_0_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+118 Infos, 32 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file bd_0_wrapper_clock_utilization_routed.rpt
+report_clock_utilization: Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 4467.246 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file bd_0_wrapper_bus_skew_routed.rpt -pb bd_0_wrapper_bus_skew_routed.pb -rpx bd_0_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:26 ; elapsed = 00:00:19 . Memory (MB): peak = 4467.246 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.613 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.109 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 4467.246 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.769 . Memory (MB): peak = 4467.246 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/impl_1/bd_0_wrapper_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 01:49:40 2025...
+[Sun Apr 27 01:49:41 2025] impl_1 finished
+wait_on_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:03:09 . Memory (MB): peak = 3792.883 ; gain = 0.000
+TIMESTAMP: HLS-REPORT: implementation open_run: 2025-04-27 01:49:41 +0800
+INFO: HLS-REPORT: Opening implementation design database: open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 3792.883 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 443 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 3792.883 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.330 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.097 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.476 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.493 . Memory (MB): peak = 3792.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 3792.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 66 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 16 instances
+  DSP48E1 => DSP48E2 (inverted pins: ALUMODE[1], ALUMODE[0]) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 2 instances
+  DSP48E1 => DSP48E2 (inverted pins: OPMODE[3], OPMODE[2]) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E1 => DSP48E2 (inverted pins: OPMODE[5], OPMODE[4]) (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 1 instance 
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 42 instances
+
+open_run: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 3792.883 ; gain = 0.000
+TIMESTAMP: HLS-REPORT: implementation generate_reports_vivado: 2025-04-27 01:49:47 +0800
+INFO: HLS-REPORT: Running report: report_utilization -file ./report/CNN_stream_utilization_routed.rpt
+INFO: HLS-REPORT: Running report: report_utilization -hierarchical -hierarchical_depth 6 -file ./report/CNN_stream_utilization_hierarchical_routed.rpt
+INFO: HLS-REPORT: Running report: report_timing_summary -file ./report/CNN_stream_timing_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port "ap_clk" is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew
+Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design
+INFO: HLS-REPORT: Running report: report_power -file ./report/CNN_stream_power_routed.rpt -xpe ./CNN_stream_power.xpe
+Command: report_power -file ./report/CNN_stream_power_routed.rpt -xpe ./CNN_stream_power.xpe
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+13 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3792.883 ; gain = 0.000
+INFO: HLS-REPORT: Running report: report_route_status -file ./report/CNN_stream_status_routed.rpt
+INFO: HLS-REPORT: Running report: report_timing -max_paths 10 -file ./report/CNN_stream_timing_paths_routed.rpt
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -2, Temperature grade: I, Delay Type: max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Timing 38-78] ReportTimingParams: -max_paths 10 -nworst 1 -delay_type max -sort_by slack.
+INFO: HLS-REPORT: Running report: report_design_analysis -file ./report/CNN_stream_design_analysis_routed.rpt
+INFO: HLS-REPORT: Running report: ::tclapp::xilinx::designutils::report_failfast -detailed_report impl -file ./report/CNN_stream_failfast_routed.rpt
+ -I- design metrics completed in 1 seconds
+ -I- DONT_TOUCH metric completed in 0 seconds
+ -I- MARK_DEBUG metric completed in 0 seconds
+ -I- utilization metrics completed in 1 seconds
+ -I- Generated file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/report/impl.BUFG.rpt
+ -I- control set metrics completed in 0 seconds
+ -I- methodology check metrics completed in 1 seconds
+ -I- average fanout metrics completed in 1 seconds (0 modules)
+ -I- non-FD high fanout nets completed in 1 seconds
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[10]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[11]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[12]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[13]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[14]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[15]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[16]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[17]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[18]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[19]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[1]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[20]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[21]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[22]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[23]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[24]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[25]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[26]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[27]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[28]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[29]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[2]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[30]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[31]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[32]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[33]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[34]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[35]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[36]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[37]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[38]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[39]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[3]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[40]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[41]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[42]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[43]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[4]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[5]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[6]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[7]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[8]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/U[9]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[0]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[10]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[11]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[12]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[13]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[14]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[15]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[16]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[17]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[18]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[19]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[20]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[21]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[22]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[23]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[24]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[25]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[26]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[27]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[28]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[29]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[30]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[31]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[32]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[33]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[34]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[35]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[36]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[37]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[38]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[39]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[40]})
+ -W- LUT/Net budgeting - the number of pins (7) and cells (6) differ. Skipping path ({bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]/C --> bd_0_i/hls_inst/inst/l_softmax_layer_stream_U0/fsub_32ns_32ns_32_8_full_dsp_1_U798/CNN_stream_fsub_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/i_no_versal_es1_workaround.DSP/DSP_M_DATA_INST/V[41]})
+ -I- path budgeting metrics completed in 19 seconds
+#  +-----------------------------------------------------------------------------------------+
+#  | Design Summary                                                                          |
+#  | impl_1                                                                                  |
+#  | xczu19eg-ffvc1760-2-i                                                                   |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Criteria                                                  | Guideline | Actual | Status |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | LUT                                                       | 70%       | 1.31%  | OK     |
+#  | FD                                                        | 50%       | 0.56%  | OK     |
+#  | LUTRAM+SRL                                                | 25%       | 0.35%  | OK     |
+#  | CARRY8                                                    | 25%       | 0.26%  | OK     |
+#  | MUXF7                                                     | 15%       | 0.08%  | OK     |
+#  | DSP                                                       | 80%       | 1.22%  | OK     |
+#  | RAMB/FIFO                                                 | 80%       | 0.00%  | OK     |
+#  | URAM                                                      | 80%       | 0.00%  | OK     |
+#  | DSP+RAMB+URAM (Avg)                                       | 70%       | 1.22%  | OK     |
+#  | BUFGCE* + BUFGCTRL                                        | 24        | 0      | OK     |
+#  | DONT_TOUCH (cells/nets)                                   | 0         | 0      | OK     |
+#  | MARK_DEBUG (nets)                                         | 0         | 0      | OK     |
+#  | Control Sets                                              | 9801      | 497    | OK     |
+#  | Average Fanout for modules > 100k cells                   | 4         | 1.74   | OK     |
+#  | Max Average Fanout for modules > 100k cells               | 4         | 0      | OK     |
+#  | Non-FD high fanout nets > 10k loads                       | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | TIMING-6 (No common primary clock between related clocks) | 0         | 0      | OK     |
+#  | TIMING-7 (No common node between related clocks)          | 0         | 0      | OK     |
+#  | TIMING-8 (No common period between related clocks)        | 0         | 0      | OK     |
+#  | TIMING-14 (LUT on the clock tree)                         | 0         | 0      | OK     |
+#  | TIMING-35 (No common node in paths with the same clock)   | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+#  | Number of paths above max LUT budgeting (0.300ns)         | 0         | 0      | OK     |
+#  | Number of paths above max Net budgeting (0.208ns)         | 0         | 0      | OK     |
+#  +-----------------------------------------------------------+-----------+--------+--------+
+ -I- Generated file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/report/CNN_stream_failfast_routed.rpt
+ -I- Number of criteria to review: 0
+ -I- This report should be run before placing the design and uses conservative guidelines beyond which runtime and timing closure will likely be more challenging
+ -I- report_failfast completed in 24 seconds
+TIMESTAMP: HLS-REPORT: implementation gen_data_dict_vivado: 2025-04-27 01:50:22 +0800
+TIMESTAMP: HLS-REPORT: impl extract_util_hier: 2025-04-27 01:50:22 +0800
+TIMESTAMP: HLS-REPORT: impl get_cell_hier_data: 2025-04-27 01:50:24 +0800
+TIMESTAMP: HLS-REPORT: impl get_timing_paths: 2025-04-27 01:50:24 +0800
+TIMESTAMP: HLS-REPORT: impl process timing paths: 2025-04-27 01:50:24 +0800
+TIMESTAMP: HLS-REPORT: impl get_all_vv_rpt_files: 2025-04-27 01:50:24 +0800
+TIMESTAMP: HLS-REPORT: implementation write_reports_vivado: 2025-04-27 01:50:24 +0800
+HLS EXTRACTION: impl area_totals:  0 522720 1045440 1968 1968 65340 128
+HLS EXTRACTION: impl area_current: 0 6829 5855 24 0 0 222 1481 0 0
+HLS EXTRACTION: impl resources_dict: AVAIL_LUT 522720 LUT 6829 AVAIL_FF 1045440 FF 5855 AVAIL_DSP 1968 DSP 24 AVAIL_BRAM 1968 BRAM 0 AVAIL_URAM 128 URAM 0 LATCH 0 SRL 222 AVAIL_CLB 65340 CLB 1481
+INFO: HLS-REPORT: generated D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/report/vivado_impl.xml
+INFO: HLS-REPORT: generated D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/report/verilog/CNN_stream_export.rpt
+
+
+Implementation tool: Xilinx Vivado v.2024.2
+Project:             hls_component
+Solution:            hls
+Device target:       xczu19eg-ffvc1760-2-i
+Report date:         Sun Apr 27 01:50:24 +0800 2025
+
+#=== Post-Implementation Resource usage ===
+SLICE:            0
+LUT:           6829
+FF:            5855
+DSP:             24
+BRAM:             0
+URAM:             0
+LATCH:            0
+SRL:            222
+CLB:           1481
+
+#=== Final timing ===
+CP required:                     5.000
+CP achieved post-synthesis:      2.348
+CP achieved post-implementation: 3.544
+Timing met
+
+TIMESTAMP: HLS-REPORT: implementation end: 2025-04-27 01:50:24 +0800
+INFO: HLS-REPORT: impl run complete: worst setup slack (WNS)=1.456311, worst hold slack (WHS)=0.033651, total pulse width slack(TPWS)=0.000000, number of unrouted nets=0
+# hls_vivado_reports_finalize $report_options
+TIMESTAMP: HLS-REPORT: all reports complete: 2025-04-27 01:50:24 +0800
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 27 01:50:24 2025...
+INFO: [HLS 200-802] Generated output file hls_component/CNN_stream.zip
+INFO: [HLS 200-112] Total CPU user time: 12 seconds. Total CPU system time: 1 seconds. Total elapsed time: 560.924 seconds; peak allocated memory: 355.609 MB.
+INFO: [vitis-run 60-791] Total elapsed time: 0h 9m 25s

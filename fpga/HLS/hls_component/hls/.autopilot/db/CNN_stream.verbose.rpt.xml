@@ -1,0 +1,515 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'CNN_stream'" level="0">
+<item name = "Date">Fri Aug  1 07:20:38 2025
+</item>
+<item name = "Version">2024.2 (Build 5238294 on Nov  8 2024)</item>
+<item name = "Project">hls_component</item>
+<item name = "Solution">hls (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu19eg-ffvc1760-2-i</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.57 ns, 3.239 ns, 0.96 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">97, 97, 0.346 us, 0.346 us, 3, 3, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="feature_separate_layer_stream_9u_U0">feature_separate_layer_stream_9u_s, 0, 0, 0 ns, 0 ns, 1, 1, yes</column>
+<column name="embedding_layer_stream_9u_U0">embedding_layer_stream_9u_s, 1, 1, 3.571 ns, 3.571 ns, 1, 1, no</column>
+<column name="feature_concate_layer_stream_9u_U0">feature_concate_layer_stream_9u_s, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="fully_connect_layer_stream3_9u_U0">fully_connect_layer_stream3_9u_s, 8, 8, 28.568 ns, 28.568 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="conv2d_3_stream_layer_9u_U0">conv2d_3_stream_layer_9u_s, 5, 5, 17.855 ns, 17.855 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="conv2d_4_stream_layer_9u_U0">conv2d_4_stream_layer_9u_s, 5, 5, 17.855 ns, 17.855 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="conv2d_5_stream_layer_9u_U0">conv2d_5_stream_layer_9u_s, 5, 5, 17.855 ns, 17.855 ns, 3, 3, loop auto-rewind stp (delay=0 clock cycles(s))</column>
+<column name="conv2d_3_stream_layer_post_9u_U0">conv2d_3_stream_layer_post_9u_s, 1, 1, 3.571 ns, 3.571 ns, 1, 1, yes</column>
+<column name="conv2d_4_stream_layer_post_9u_U0">conv2d_4_stream_layer_post_9u_s, 1, 1, 3.571 ns, 3.571 ns, 1, 1, yes</column>
+<column name="conv2d_5_stream_layer_post_9u_U0">conv2d_5_stream_layer_post_9u_s, 1, 1, 3.571 ns, 3.571 ns, 1, 1, yes</column>
+<column name="reshape_concate_layer_stream_U0">reshape_concate_layer_stream, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="fully_connect2_layer_stream_U0">fully_connect2_layer_stream, 2, 2, 7.142 ns, 7.142 ns, 2, 2, no</column>
+<column name="l_softmax_layer_stream_U0">l_softmax_layer_stream, 81, 81, 0.289 us, 0.289 us, 3, 3, yes</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 4, -</column>
+<column name="FIFO">514, -, 37740, 24430, -</column>
+<column name="Instance">100, 24, 10615, 19944, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, -, -</column>
+<column name="Register">-, -, -, -, -</column>
+<specialColumn name="Available">1968, 1968, 1045440, 522720, 128</specialColumn>
+<specialColumn name="Utilization (%)">31, 1, 4, 8, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="conv2d_3_stream_layer_9u_U0">conv2d_3_stream_layer_9u_s, 0, 0, 143, 1091, 0</column>
+<column name="conv2d_3_stream_layer_post_9u_U0">conv2d_3_stream_layer_post_9u_s, 0, 0, 492, 1634, 0</column>
+<column name="conv2d_4_stream_layer_9u_U0">conv2d_4_stream_layer_9u_s, 0, 0, 179, 1325, 0</column>
+<column name="conv2d_4_stream_layer_post_9u_U0">conv2d_4_stream_layer_post_9u_s, 0, 0, 1203, 2149, 0</column>
+<column name="conv2d_5_stream_layer_9u_U0">conv2d_5_stream_layer_9u_s, 0, 0, 215, 1559, 0</column>
+<column name="conv2d_5_stream_layer_post_9u_U0">conv2d_5_stream_layer_post_9u_s, 0, 0, 1023, 2393, 0</column>
+<column name="embedding_layer_stream_9u_U0">embedding_layer_stream_9u_s, 100, 0, 4, 360, 0</column>
+<column name="feature_concate_layer_stream_9u_U0">feature_concate_layer_stream_9u_s, 0, 0, 3, 263, 0</column>
+<column name="feature_separate_layer_stream_9u_U0">feature_separate_layer_stream_9u_s, 0, 0, 3, 191, 0</column>
+<column name="fully_connect2_layer_stream_U0">fully_connect2_layer_stream, 0, 0, 690, 1163, 0</column>
+<column name="fully_connect_layer_stream3_9u_U0">fully_connect_layer_stream3_9u_s, 0, 0, 4135, 4417, 0</column>
+<column name="l_softmax_layer_stream_U0">l_softmax_layer_stream, 0, 24, 2522, 3046, 0</column>
+<column name="reshape_concate_layer_stream_U0">reshape_concate_layer_stream, 0, 0, 3, 353, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+<column name="conv_out3_10_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_11_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_12_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_13_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_10_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_11_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="conv_out5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="fc2_embedding_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="fc2_embedding_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="feature2_embedding_U">64, 147, 0, -, 4, 1152, 4608</column>
+<column name="feature_embedding_0_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_1_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_2_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_3_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_4_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_5_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_6_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_7_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="feature_embedding_8_U">32, 147, 0, -, 4, 576, 2304</column>
+<column name="ipd_x_1_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_2_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_3_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_4_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_5_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_6_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_7_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_8_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="ipd_x_embedding_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_3_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_4_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_5_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_6_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_7_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="ipd_x_embedding_8_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="len_x_1_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_2_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_3_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_4_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_5_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_6_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_7_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_8_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_U">0, 99, 0, -, 4, 8, 32</column>
+<column name="len_x_embedding_0_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_1_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_2_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_3_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_4_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_5_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_6_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_7_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="len_x_embedding_8_U">18, 147, 0, -, 4, 320, 1280</column>
+<column name="proj_embedding3_0_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_0_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_0_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_1_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_1_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_1_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_2_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_2_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_2_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_3_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_3_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_3_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_4_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_4_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_4_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_5_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_5_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_5_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_6_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_6_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_6_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_7_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_7_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding3_7_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_0_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_0_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_0_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_1_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_1_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_1_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_2_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_2_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_2_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_3_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_3_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_3_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_4_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_4_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_4_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_5_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_5_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_5_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_6_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_6_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_6_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_7_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_7_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding4_7_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_0_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_0_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_0_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_1_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_1_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_1_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_2_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_2_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_2_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_3_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_3_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_3_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_4_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_4_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_4_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_5_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_5_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_5_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_6_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_6_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_6_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_7_0_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_7_1_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="proj_embedding5_7_2_U">0, 99, 0, -, 4, 256, 1024</column>
+<column name="sum_out3_10_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_11_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_12_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_13_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_14_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_15_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_16_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_17_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_18_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_19_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_20_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_21_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_22_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_23_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_24_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_25_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_26_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_27_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_28_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_29_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_30_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_31_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_32_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_33_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_34_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_35_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_36_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_37_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_38_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_39_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_40_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_41_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_42_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_43_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_44_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_45_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_46_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_47_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_48_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_49_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_50_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_51_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_52_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_53_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_10_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_11_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_12_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_13_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_14_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_15_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_16_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_17_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_18_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_19_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_20_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_21_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_22_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_23_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_24_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_25_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_26_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_27_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_28_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_29_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_30_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_31_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_32_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_33_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_34_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_35_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_36_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_37_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_38_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_39_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_40_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_41_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_42_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_43_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_44_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_45_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_46_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_47_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_48_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_49_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_50_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_51_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_52_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_53_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_54_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_55_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_56_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_57_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_58_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_59_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_60_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_61_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_62_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_63_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_64_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_65_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_66_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_67_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_68_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_69_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_70_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_71_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_10_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_11_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_12_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_13_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_14_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_15_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_16_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_17_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_18_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_19_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_1_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_20_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_21_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_22_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_23_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_24_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_25_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_26_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_27_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_28_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_29_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_2_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_30_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_31_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_32_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_33_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_34_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_35_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_36_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_37_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_38_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_39_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_3_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_40_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_41_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_42_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_43_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_44_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_45_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_46_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_47_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_48_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_49_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_4_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_50_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_51_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_52_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_53_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_54_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_55_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_56_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_57_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_58_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_59_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_5_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_60_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_61_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_62_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_63_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_64_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_65_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_66_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_67_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_68_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_69_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_6_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_70_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_71_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_72_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_73_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_74_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_75_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_76_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_77_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_78_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_79_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_7_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_80_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_81_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_82_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_83_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_84_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_85_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_86_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_87_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_88_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_89_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_8_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_9_U">0, 99, 0, -, 4, 32, 128</column>
+<column name="sum_out5_U">0, 99, 0, -, 4, 32, 128</column>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="fully_connect_layer_stream3_9u_U0_start_full_n">and, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="din_TDATA">in, 144, axis, din, pointer</column>
+<column name="din_TVALID">in, 1, axis, din, pointer</column>
+<column name="din_TREADY">out, 1, axis, din, pointer</column>
+<column name="dout_0_TDATA">out, 8, axis, dout_0, pointer</column>
+<column name="dout_0_TVALID">out, 1, axis, dout_0, pointer</column>
+<column name="dout_0_TREADY">in, 1, axis, dout_0, pointer</column>
+<column name="dout_1_TDATA">out, 8, axis, dout_1, pointer</column>
+<column name="dout_1_TVALID">out, 1, axis, dout_1, pointer</column>
+<column name="dout_1_TREADY">in, 1, axis, dout_1, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, CNN_stream, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, CNN_stream, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, CNN_stream, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, CNN_stream, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, CNN_stream, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, CNN_stream, return value</column>
+</table>
+</item>
+</section>
+</profile>

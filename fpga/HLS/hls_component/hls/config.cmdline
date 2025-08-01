@@ -1,0 +1,3 @@
+relativeroot=D:/sidejob/ethernet_NN/NN/hls_component
+original_argv=--mode hls --package --config D:\sidejob\ethernet_NN\NN\hls_component\hls_config.cfg --work_dir hls_component 
+

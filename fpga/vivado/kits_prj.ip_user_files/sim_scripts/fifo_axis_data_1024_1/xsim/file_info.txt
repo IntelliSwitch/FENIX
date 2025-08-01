@@ -1,0 +1,2 @@
+fifo_axis_data_1024_1.v,verilog,xil_defaultlib,../../../../kits_prj.gen/sources_1/ip/fifo_axis_data_1024_1/sim/fifo_axis_data_1024_1.v,incdir="../../../ipstatic/hdl"incdir="../../../ipstatic/hdl"
+glbl.v,Verilog,xil_defaultlib,glbl.v

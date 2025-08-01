@@ -1,0 +1,600 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/sidejob/ethernet_NN/NN/hls_component/hls_component 
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.cpp' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Coeff.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Coeff.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ComponentStream.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(11)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/ComponentStream.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Type.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(12)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Type.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=ComponentsStream.cpp' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(13)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/ComponentsStream.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=CNN_stream' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu19eg-ffvc1760-2-i' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1611] Setting target device to 'xczu19eg-ffvc1760-2-i'
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(5)
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 2.147 seconds; current allocated memory: 269.223 MB.
+INFO: [HLS 200-10] Analyzing design file 'ComponentsStream.cpp' ... 
+WARNING: [HLS 207-4947] '&&' within '||' (./ComponentStream.h:87:22)
+INFO: [HLS 207-4428] place parentheses around the '&&' expression to silence this warning (./ComponentStream.h:87:22)
+WARNING: [HLS 207-4947] '&&' within '||' (./ComponentStream.h:134:22)
+INFO: [HLS 207-4428] place parentheses around the '&&' expression to silence this warning (./ComponentStream.h:134:22)
+WARNING: [HLS 207-4947] '&&' within '||' (./ComponentStream.h:177:22)
+INFO: [HLS 207-4428] place parentheses around the '&&' expression to silence this warning (./ComponentStream.h:177:22)
+INFO: [HLS 200-10] Analyzing design file 'Components.cpp' ... 
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (Components.cpp:266:92)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 214-113] Either use an argument of the function or declare the variable inside the dataflow loop body (Components.cpp:276:103)
+Resolution: For help on HLS 214-113 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=214-113.html
+WARNING: [HLS 200-471] Dataflow form checks found 2 issue(s) in file Components.cpp
+Resolution: For help on HLS 200-471 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-471.html
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 2 seconds. CPU system time: 0 seconds. Elapsed time: 29.662 seconds; current allocated memory: 279.352 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 200-1995] There were 3,887 instructions in the design after the 'Compile/Link' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,533 instructions in the design after the 'Unroll/Inline (step 1)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,243 instructions in the design after the 'Unroll/Inline (step 2)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,196 instructions in the design after the 'Unroll/Inline (step 3)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 2,170 instructions in the design after the 'Unroll/Inline (step 4)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 5,647 instructions in the design after the 'Array/Struct (step 1)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,775 instructions in the design after the 'Array/Struct (step 2)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 4,850 instructions in the design after the 'Array/Struct (step 3)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,058 instructions in the design after the 'Array/Struct (step 4)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,067 instructions in the design after the 'Array/Struct (step 5)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,090 instructions in the design after the 'Performance (step 1)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,400 instructions in the design after the 'Performance (step 2)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 9,505 instructions in the design after the 'Performance (step 3)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,185 instructions in the design after the 'Performance (step 4)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 6,396 instructions in the design after the 'HW Transforms (step 1)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 200-1995] There were 7,458 instructions in the design after the 'HW Transforms (step 2)' phase of compilation. See the Design Size Report for more details: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/syn/report/csynth_design_size.rpt
+INFO: [HLS 214-131] Inlining function 'exp_reduce_::exp(float)' into 'hls::exp(float)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\expfloat.cpp:17:9)
+INFO: [HLS 214-131] Inlining function 'log_reduce::log(float)' into 'hls::log(float)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\c++\logfloat.cpp:9:9)
+INFO: [HLS 214-131] Inlining function 'hls::exp(float)' into 'l_softmax_layer_stream(hls::stream<int, 0> (&) [2], hls::stream<int, 0> (&) [2])' (./ComponentStream.h:249:17)
+INFO: [HLS 214-131] Inlining function 'hls::log(float)' into 'l_softmax_layer_stream(hls::stream<int, 0> (&) [2], hls::stream<int, 0> (&) [2])' (./ComponentStream.h:251:12)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_232_1' (./ComponentStream.h:232:23) in function 'fully_connect2_layer_stream' completely with a factor of 2 (./ComponentStream.h:230:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_264_2' (./ComponentStream.h:264:27) in function 'data_dispatch_stream<9u>' completely with a factor of 8 (./ComponentStream.h:261:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_60_2' (./ComponentStream.h:60:26) in function 'fully_connect_layer_stream<9u>' completely with a factor of 8 (./ComponentStream.h:57:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::fp_struct(float)' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::mantissa() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::expv() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'fp_struct<float>::__signbit() const' into 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:12:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, (ap_q_mode)6, float>(float, bool, hls::enable_if<std::numeric_limits<int>::is_signed, bool>::type)' into 'int generic_cast_IEEE754<int, float>(float, bool)' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib/hlsmath/include/FloatingPoint\hls_case_IEEE754.h:116:0)
+INFO: [HLS 214-178] Inlining function 'int generic_cast_IEEE754<int, float>(float, bool)' into '__hls_fptosi_float_i32' (C:\scratch\2024.2\hls_product\495\2024.2\src\shared\hls\clib\hlsmath\src\lib_floatconversion.cpp:51:0)
+INFO: [HLS 214-178] Inlining function '__hls_fptosi_float_i32' into 'l_softmax_layer_stream(hls::stream<int, 0> (&) [2], hls::stream<int, 0> (&) [2])' (./ComponentStream.h:244:0)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'pe' (./ComponentStream.h:69:32)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'pe' (./ComponentStream.h:99:39)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '_ZL6conv_3' (./ComponentStream.h:99:65)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'pe' (./ComponentStream.h:142:39)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '_ZL6conv_4' (./ComponentStream.h:142:65)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable 'pe' (./ComponentStream.h:185:39)
+WARNING: [HLS 214-167] The program may have out of bound array access on variable '_ZL6conv_5' (./ComponentStream.h:185:65)
+INFO: [HLS 214-248] Applying array_partition to 'proj_embedding': Complete partitioning on dimension 1. (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-248] Applying array_partition to 'proj_embedding3': Complete partitioning on dimension 1. (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-248] Applying array_partition to 'proj_embedding4': Complete partitioning on dimension 1. (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-248] Applying array_partition to 'proj_embedding5': Complete partitioning on dimension 1. (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-248] Applying array_partition to 'sum_out3': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:17:23)
+INFO: [HLS 214-248] Applying array_partition to 'sum_out4': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:18:23)
+INFO: [HLS 214-248] Applying array_partition to 'sum_out5': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:19:23)
+INFO: [HLS 214-248] Applying array_partition to 'conv_out3': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:21:23)
+INFO: [HLS 214-248] Applying array_partition to 'conv_out4': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:22:23)
+INFO: [HLS 214-248] Applying array_partition to 'conv_out5': Complete partitioning on dimension 1. Complete partitioning on dimension 2. (ComponentsStream.cpp:23:23)
+INFO: [HLS 214-248] Applying array_partition to 'fc2_embedding': Complete partitioning on dimension 1. (ComponentsStream.cpp:26:23)
+INFO: [HLS 214-248] Applying array_partition to 'dout': Complete partitioning on dimension 1. (ComponentsStream.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'len_x_embedding' with compact=bit mode in 320-bits (ComponentsStream.cpp:9:28)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'ipd_x_embedding' with compact=bit mode in 256-bits (ComponentsStream.cpp:10:28)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'feature_embedding' with compact=bit mode in 576-bits (ComponentsStream.cpp:11:32)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_7' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_6' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_5' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_4' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_3' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_2' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_1' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding_0' with compact=bit mode in 256-bits (ComponentsStream.cpp:12:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_7' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_6' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_5' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_4' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_3' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_2' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_1' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding3_0' with compact=bit mode in 256-bits (ComponentsStream.cpp:13:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_7' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_6' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_5' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_4' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_3' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_2' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_1' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding4_0' with compact=bit mode in 256-bits (ComponentsStream.cpp:14:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_7' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_6' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_5' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_4' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_3' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_2' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_1' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'proj_embedding5_0' with compact=bit mode in 256-bits (ComponentsStream.cpp:15:30)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'feature2_embedding' with compact=bit mode in 1152-bits (ComponentsStream.cpp:25:33)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'dout_1' with compact=bit mode in 32-bits (ComponentsStream.cpp:5:0)
+INFO: [HLS 214-241] Aggregating fifo (hls::stream) variable 'dout_0' with compact=bit mode in 32-bits (ComponentsStream.cpp:5:0)
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_247_1> at ./ComponentStream.h:247:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_252_2> at ./ComponentStream.h:252:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_236_2> at ./ComponentStream.h:236:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_214_1> at ./ComponentStream.h:214:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_218_2> at ./ComponentStream.h:218:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_222_3> at ./ComponentStream.h:222:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_203_2> at ./ComponentStream.h:203:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_183_4> at ./ComponentStream.h:183:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_190_6> at ./ComponentStream.h:190:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_172_2> at ./ComponentStream.h:172:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_160_2> at ./ComponentStream.h:160:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_140_4> at ./ComponentStream.h:140:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_147_6> at ./ComponentStream.h:147:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_129_2> at ./ComponentStream.h:129:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_117_2> at ./ComponentStream.h:117:27 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_97_4> at ./ComponentStream.h:97:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_104_6> at ./ComponentStream.h:104:31 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_82_2> at ./ComponentStream.h:82:26 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_263_1> at ./ComponentStream.h:263:23 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_63_3> at ./ComponentStream.h:63:30 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_44_1> at ./ComponentStream.h:44:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_28_1> at ./ComponentStream.h:28:22 
+INFO: [HLS 214-376] automatically set the pipeline for Loop< VITIS_LOOP_14_1> at ./ComponentStream.h:14:22 
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_184_5' is marked as complete unroll implied by the pipeline pragma (./ComponentStream.h:184:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_141_5' is marked as complete unroll implied by the pipeline pragma (./ComponentStream.h:141:35)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_98_5' is marked as complete unroll implied by the pipeline pragma (./ComponentStream.h:98:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_66_4' is marked as complete unroll implied by the pipeline pragma (./ComponentStream.h:66:34)
+INFO: [HLS 214-291] Loop 'VITIS_LOOP_48_2' is marked as complete unroll implied by the pipeline pragma (./ComponentStream.h:48:26)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_184_5' (./ComponentStream.h:184:35) in function 'conv2d_5_stream_layer<9u>' completely with a factor of 16 (./ComponentStream.h:169:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_141_5' (./ComponentStream.h:141:35) in function 'conv2d_4_stream_layer<9u>' completely with a factor of 16 (./ComponentStream.h:126:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_98_5' (./ComponentStream.h:98:34) in function 'conv2d_3_stream_layer<9u>' completely with a factor of 16 (./ComponentStream.h:79:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_66_4' (./ComponentStream.h:66:34) in function 'fully_connect_layer_stream<9u>' completely with a factor of 18 (./ComponentStream.h:57:0)
+INFO: [HLS 214-186] Unrolling loop 'VITIS_LOOP_48_2' (./ComponentStream.h:48:26) in function 'feature_concate_layer_stream<9u>' completely with a factor of 18 (./ComponentStream.h:43:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL15fc1_coef_stream' dimension 2 completely based on constant index. (./Coeff.h:31:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL26len_embedding_table_stream' dimension 2 completely based on constant index. (./Coeff.h:14:0)
+INFO: [HLS 214-449] Automatically partitioning array '_ZL26ipd_embedding_table_stream' dimension 2 completely based on constant index. (./Coeff.h:18:0)
+INFO: [HLS 214-449] Automatically partitioning array 'le' dimension 1 completely based on constant index. (./ComponentStream.h:45:19)
+INFO: [HLS 214-449] Automatically partitioning array 'ie' dimension 1 completely based on constant index. (./ComponentStream.h:46:19)
+INFO: [HLS 214-449] Automatically partitioning array 'fe' dimension 1 completely based on constant index. (./ComponentStream.h:47:23)
+INFO: [HLS 214-449] Automatically partitioning array 'fe' dimension 1 completely based on constant index. (./ComponentStream.h:59:23)
+INFO: [HLS 214-449] Automatically partitioning array 'pce' dimension 1 completely based on constant index.
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'fc1_coef_stream' due to pipeline pragma (./Coeff.h:31:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'ipd_embedding_table_stream' due to pipeline pragma (./Coeff.h:18:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=2' for array 'len_embedding_table_stream' due to pipeline pragma (./Coeff.h:14:0)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'le' due to pipeline pragma (./ComponentStream.h:45:19)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'ie' due to pipeline pragma (./ComponentStream.h:46:19)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'fe' due to pipeline pragma (./ComponentStream.h:47:23)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'fe' due to pipeline pragma (./ComponentStream.h:59:23)
+INFO: [HLS 214-270] Inferring pragma 'array_partition type=complete dim=1' for array 'pce' due to pipeline pragma
+INFO: [HLS 214-248] Applying array_partition to '_ZL26len_embedding_table_stream': Complete partitioning on dimension 2. (./Coeff.h:14:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL26ipd_embedding_table_stream': Complete partitioning on dimension 2. (./Coeff.h:18:0)
+INFO: [HLS 214-248] Applying array_partition to '_ZL15fc1_coef_stream': Complete partitioning on dimension 2. (./Coeff.h:31:0)
+INFO: [HLS 214-248] Applying array_partition to 'le': Complete partitioning on dimension 1. (./ComponentStream.h:45:19)
+INFO: [HLS 214-248] Applying array_partition to 'ie': Complete partitioning on dimension 1. (./ComponentStream.h:46:19)
+INFO: [HLS 214-248] Applying array_partition to 'fe': Complete partitioning on dimension 1. (./ComponentStream.h:47:23)
+INFO: [HLS 214-248] Applying array_partition to 'fe': Complete partitioning on dimension 1. (./ComponentStream.h:59:23)
+INFO: [HLS 214-248] Applying array_partition to 'pce': Complete partitioning on dimension 1.
+INFO: [HLS 200-111] Finished Compiling Optimization and Transform: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 16.247 seconds; current allocated memory: 283.336 MB.
+INFO: [HLS 200-111] Finished Checking Pragmas: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.005 seconds; current allocated memory: 283.340 MB.
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.506 seconds; current allocated memory: 295.492 MB.
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 1.021 seconds; current allocated memory: 305.785 MB.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.19' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.18' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.17' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.16' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.15' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.14' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.13' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.12' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.11' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.10' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.9' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.8' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.7' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.6' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.5' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.4' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.3' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.2' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.1' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.30' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.29' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.28' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.27' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.26' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.25' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.24' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.23' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.22' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.21' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.20' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.35' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.34' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.33' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.32' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out.31' is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out' is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'len_x' (ComponentsStream.cpp:8) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'ipd_x' (ComponentsStream.cpp:8) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'len_x_embedding' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'ipd_x_embedding' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'feature_embedding' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_0' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_1' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_2' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_3' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_4' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_5' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_6' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding_7' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_0' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_1' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_2' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_3' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_4' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_5' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_6' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding3_7' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_0' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_1' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_2' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_3' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_4' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_5' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_6' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding4_7' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_0' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_1' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_2' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_3' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_4' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_5' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_6' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'proj_embedding5_7' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.1' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.2' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.3' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.4' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.5' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.6' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.7' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.8' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.9' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.10' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.11' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.12' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.13' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.14' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.15' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.16' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.17' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.18' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.19' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.20' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.21' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.22' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.23' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.24' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.25' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.26' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.27' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.28' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.29' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.30' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.31' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.32' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.33' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.34' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.35' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.36' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.37' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.38' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.39' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.40' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.41' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.42' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.43' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.44' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.45' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out3.46' (ComponentsStream.cpp:17) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out3.47' (ComponentsStream.cpp:17) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.1' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.2' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.3' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.4' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.5' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.6' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.7' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.8' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.9' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.10' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.11' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.12' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.13' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.14' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.15' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.16' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.17' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.18' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.19' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.20' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.21' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.22' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.23' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.24' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.25' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.26' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.27' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.28' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.29' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.30' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.31' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.32' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.33' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.34' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.35' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.36' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.37' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.38' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.39' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.40' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.41' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.42' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.43' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.44' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.45' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.46' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.47' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.48' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.49' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.50' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.51' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.52' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.53' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.54' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.55' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.56' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.57' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out4.58' (ComponentsStream.cpp:18) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out4.59' (ComponentsStream.cpp:18) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.1' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.2' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.3' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.4' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.5' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.6' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.7' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.8' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.9' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.10' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.11' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.12' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.13' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.14' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.15' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.16' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.17' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.18' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.19' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.20' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.21' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.22' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.23' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.24' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.25' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.26' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.27' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.28' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.29' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.30' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.31' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.32' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.33' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.34' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.35' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.36' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.37' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.38' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.39' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.40' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.41' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.42' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.43' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.44' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.45' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.46' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.47' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.48' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.49' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.50' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.51' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.52' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.53' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.54' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.55' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.56' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.57' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.58' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.59' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.60' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.61' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.62' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.63' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.64' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.65' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.66' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.67' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [XFORM 203-731] Internal stream variable 'sum_out5.68' (ComponentsStream.cpp:19) is invalid: it has no data consumer.
+WARNING: [HLS 200-805] An internal stream 'sum_out5.69' (ComponentsStream.cpp:19) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.1' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.2' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.3' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.4' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.5' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.6' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.7' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.8' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.9' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.10' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.11' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.12' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out3.13' (ComponentsStream.cpp:21) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.1' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.2' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.3' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.4' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.5' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.6' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.7' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.8' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.9' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.10' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out4.11' (ComponentsStream.cpp:22) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.1' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.2' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.3' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.4' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.5' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.6' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.7' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.8' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'conv_out5.9' (ComponentsStream.cpp:23) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'feature2_embedding' with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'fc2_embedding' (ComponentsStream.cpp:26) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+WARNING: [HLS 200-805] An internal stream 'fc2_embedding.1' (ComponentsStream.cpp:26) with default size can result in deadlock. Please consider resizing the stream using the directive 'set_directive_stream' or the 'HLS stream' pragma.
+ERROR: [HLS 200-970] Internal stream 'sum_out3.1' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.1' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out3.3' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.3' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out3.6' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.6' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out3.9' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.9' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out3.44' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.44' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out3.46' (ComponentsStream.cpp:17) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out3.46' has write operations in process function 'conv2d_3_stream_layer<9u>' (./ComponentStream.h:80:9) (around ComponentsStream.cpp:17).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.1' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.1' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.3' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.3' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.6' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.6' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.9' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.9' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.13' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.13' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.17' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.17' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.48' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.48' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.51' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.51' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.54' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.54' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.55' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.55' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.57' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.57' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out4.58' (ComponentsStream.cpp:18) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out4.58' has write operations in process function 'conv2d_4_stream_layer<9u>' (./ComponentStream.h:127:9) (around ComponentsStream.cpp:18).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.1' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.1' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.3' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.3' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.6' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.6' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.9' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.9' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.13' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.13' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.17' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.17' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.22' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.22' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.27' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.27' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.46' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.46' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.50' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.50' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.54' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.54' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.55' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.55' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.58' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.58' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.59' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.59' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.62' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.62' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.63' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.63' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.64' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.64' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.66' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.66' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.67' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.67' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-970] Internal stream 'sum_out5.68' (ComponentsStream.cpp:19) failed dataflow checking: it must be produced and consumed exactly once.
+INFO: [HLS 200-992] Variable 'sum_out5.68' has write operations in process function 'conv2d_5_stream_layer<9u>' (./ComponentStream.h:170:9) (around ComponentsStream.cpp:19).
+Resolution: For help on HLS 200-992 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-992.html
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+ERROR: [HLS 200-70] Pre-synthesis failed.
+ERROR: 
+INFO: [HLS 200-112] Total CPU user time: 8 seconds. Total CPU system time: 1 seconds. Total elapsed time: 86.069 seconds; peak allocated memory: 316.805 MB.

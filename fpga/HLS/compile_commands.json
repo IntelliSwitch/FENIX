@@ -1,0 +1,28 @@
+[
+  {
+    "directory": "D:\\sidejob\\ethernet_NN\\NN\\hls_component",
+    "arguments": [
+      "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=CNN_stream",
+      "-c",
+      "D:\\sidejob\\ethernet_NN\\NN\\hls_component\\ComponentsStream.cpp"
+    ],
+    "file": "D:\\sidejob\\ethernet_NN\\NN\\hls_component\\ComponentsStream.cpp"
+  },
+  {
+    "directory": "D:\\sidejob\\ethernet_NN\\NN\\hls_component",
+    "arguments": [
+      "D:\\Xilinx\\Vitis\\2024.2\\vcxx\\libexec\\clang++.exe",
+      "--sysroot=D:\\Xilinx\\Vitis\\2024.2\\tps\\mingw\\10.0.0\\win64.o\\nt",
+      "-fhls",
+      "-hls-syn-headers-dir=D:\\Xilinx\\Vitis\\2024.2\\common\\technology\\autopilot",
+      "-fhlstoplevel=CNN_stream",
+      "-c",
+      "D:\\sidejob\\ethernet_NN\\NN\\hls_component\\Components.cpp"
+    ],
+    "file": "D:\\sidejob\\ethernet_NN\\NN\\hls_component\\Components.cpp"
+  }
+]

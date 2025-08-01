@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L xil_defaultlib -L gtwizard_ultrascale_v1_7_19 -L xxv_ethernet_v4_1_13 -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot xxv_ethernet_25_x0y2 xil_defaultlib.xxv_ethernet_25_x0y2 xil_defaultlib.glbl -log elaborate.log

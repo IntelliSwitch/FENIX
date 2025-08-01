@@ -1,0 +1,292 @@
+  **** HLS Build v2024.2 5238294
+INFO: [HLS 200-2005] Using work_dir D:/sidejob/ethernet_NN/NN/hls_component/hls_component 
+INFO: [HLS 200-1611] Setting target device to 'xczu19eg-ffvc1760-2-i'
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(7)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Components.cpp' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(8)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Components.cpp' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.file=Coeff.h' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(9)
+INFO: [HLS 200-10] Adding design file 'D:/sidejob/ethernet_NN/NN/hls_component/Coeff.h' to the project
+INFO: [HLS 200-1465] Applying ini 'syn.top=CNN_top' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(10)
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(4)
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+INFO: [HLS 200-1465] Applying ini 'part=xczu19eg-ffvc1760-2-i' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(1)
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from D:/sidejob/ethernet_NN/NN/hls_component/hls_config.cfg(5)
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Apr 22 07:42:01 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: calling package_hls_ip ip_types=vitis sysgen json_file=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/hls_data.json outdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip srcdir=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls sort_interfaces_ports=false
+INFO: Copied 1 ipmisc file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/misc
+INFO: Copied 29 verilog file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Copied 29 vhdl file(s) to D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl
+Generating 5 subcores in D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/ip.tmp:
+impl/misc/CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+impl/misc/CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.tcl
+impl/misc/CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+impl/misc/CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+impl/misc/CNN_top_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+INFO: Using COE_DIR=D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/verilog
+INFO: Generating CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: Done generating CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/CNN_top_fadd_32ns_32ns_32_4_full_dsp_1_ip.tcl
+INFO: Generating CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip'...
+INFO: Done generating CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip via file impl/misc/CNN_top_fexp_32ns_32ns_32_8_full_dsp_1_ip.tcl
+INFO: Generating CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip via file impl/misc/CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip'...
+INFO: Done generating CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip via file impl/misc/CNN_top_flog_32ns_32ns_32_9_full_dsp_1_ip.tcl
+INFO: Generating CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip'...
+INFO: Done generating CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip via file impl/misc/CNN_top_fsub_32ns_32ns_32_4_full_dsp_1_ip.tcl
+INFO: Generating CNN_top_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/CNN_top_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+WARNING: [IP_Flow 19-4832] The IP name 'CNN_top_sitofp_32ns_32_4_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'CNN_top_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'CNN_top_sitofp_32ns_32_4_no_dsp_1_ip'...
+INFO: Done generating CNN_top_sitofp_32ns_32_4_no_dsp_1_ip via file impl/misc/CNN_top_sitofp_32ns_32_4_no_dsp_1_ip.tcl
+INFO: Import ports from HDL: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/hdl/vhdl/CNN_top.vhd (CNN_top)
+INFO: Add clock interface ap_clk
+INFO: Add reset interface ap_rst
+INFO: Add ap_ctrl interface ap_ctrl
+INFO: Add data interface din_address0
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: Add data interface din_d0
+INFO: Add data interface din_q0
+INFO: Add data interface din_address1
+INFO: Add data interface din_d1
+INFO: Add data interface din_q1
+INFO: Add data interface kernel3_address0
+INFO: Add data interface kernel3_d0
+INFO: Add data interface kernel3_q0
+INFO: Add data interface kernel3_address1
+INFO: Add data interface kernel3_d1
+INFO: Add data interface kernel3_q1
+INFO: Add data interface kernel4_address0
+INFO: Add data interface kernel4_d0
+INFO: Add data interface kernel4_q0
+INFO: Add data interface kernel4_address1
+INFO: Add data interface kernel4_d1
+INFO: Add data interface kernel4_q1
+INFO: Add data interface kernel5_address0
+INFO: Add data interface kernel5_d0
+INFO: Add data interface kernel5_q0
+INFO: Add data interface kernel5_address1
+INFO: Add data interface kernel5_d1
+INFO: Add data interface kernel5_q1
+INFO: Add data interface dout_address0
+INFO: Add data interface dout_d0
+INFO: Add data interface dout_address1
+INFO: Add data interface dout_d1
+INFO: Calling post_process_vitis to specialize IP
+INFO: Calling post_process_sysgen to specialize IP
+Generating sysgen info xml from json file
+INFO: Created IP D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/component.xml
+INFO: Created IP archive D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip/xilinx_com_hls_CNN_top_1_0.zip
+INFO: [Common 17-206] Exiting Vivado at Tue Apr 22 07:42:20 2025...
+INFO: [IMPL 213-8] Starting RTL evaluation using Vivado ...
+
+D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog>D:/Xilinx/Vivado/2024.2/bin/vivado  -mode batch -source run_vivado.tcl   || exit $? 
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Tue Apr 22 07:42:22 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source run_vivado.tcl
+# source ./settings.tcl
+## set top_module CNN_top
+## set language verilog
+## set family zynquplus
+## set device xczu19eg
+## set package -ffvc1760
+## set speed -2-i
+## set clock ap_clk
+## set fsm_ext "off"
+## set add_io_buffers false 
+# source -notrace ./extraction.tcl
+# set vivado_proj_name project
+# set vivado_proj_dir .
+# set target_device "${device}${package}${speed}"
+# set target_clk_period_ns "10.000"
+# set target_clk_freq_hz [expr {floor(1000 / $target_clk_period_ns) * 1000000}]
+# set other_clks_freq_hz {}
+# set ip_vlnv xilinx.com:hls:CNN_top:1.0
+# set ip_repo_path ../ip
+# set bd_design_name bd_0
+# set bd_inst_name hls_inst
+# set bd_props {}
+# set has_synth true
+# set synth_design_args {-directive sdx_optimization_effort_high}
+# set synth_dcp ""
+# set synth_props {}
+# set has_impl 1
+# set impl_props {}
+# set report_options [dict create]
+# dict set report_options report_level 2
+# dict set report_options report_max_paths 10
+# dict set report_options stdout_hls_reports 1
+# dict set report_options stdout_vivado_reports 0
+# dict set report_options hls_project hls_component
+# dict set report_options hls_solution hls
+# dict set report_options has_synth $has_synth
+# dict set report_options has_impl $has_impl
+# dict set report_options vivado_reportbasename $top_module
+# dict set report_options vivado_reportdir ./report
+# dict set report_options hls_impl_dir ..
+# dict set report_options hls_reportdir ../report/$language
+# dict set report_options target_clk_period $target_clk_period_ns
+# dict set report_options target_device $target_device
+# dict set report_options language $language
+# dict set report_options clock_name $clock
+# dict set report_options error_if_impl_timing_fails false
+# dict set report_options topmodule "CNN_top"
+# dict set report_options funcmodules {CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_2 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_VITIS_LOOP_113_4 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_5 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_VITIS_LOOP_113_43 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_12 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_8 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_VITIS_LOOP_113_45 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_14 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_VITIS_LOOP_95_1_VITIS_LOOP_68_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Pipeline_VITIS_LOOP_167_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_s}
+# dict set report_options bindmodules {CNN_top_flow_control_loop_pipe_sequential_init CNN_top_sparsemux_7_2_32_1_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_1_conv3_6_RAM_AUTO_0R0W CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_1_sum_9_RAM_AUTO_1R1W CNN_top_sparsemux_9_2_32_1_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_12_conv4_5_RAM_AUTO_0R0W CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_12_sum_7_RAM_AUTO_1R1W CNN_top_sparsemux_11_3_32_1_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_14_conv5_4_RAM_AUTO_0R0W CNN_top_CNN_100u_9u_2u_2u_2u_128u_Outline_VITIS_LOOP_128_14_sum_4_RAM_AUTO_1R1W CNN_top_fadd_32ns_32ns_32_4_full_dsp_1 CNN_top_fsub_32ns_32ns_32_4_full_dsp_1 CNN_top_sitofp_32ns_32_4_no_dsp_1 CNN_top_flog_32ns_32ns_32_9_full_dsp_1 CNN_top_fexp_32ns_32ns_32_8_full_dsp_1 CNN_top_CNN_100u_9u_2u_2u_2u_128u_s_fc2_dout_RAM_AUTO_1R1W}
+# dict set report_options max_module_depth 8
+# create_project $vivado_proj_name $vivado_proj_dir -part $target_device -force
+# set_property target_language $language [current_project]
+# if { ![file exists $ip_repo_path] } {
+#   error "Cannot find packaged HLS IP"
+# }
+# set_property ip_repo_paths [file normalize $ip_repo_path] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2024.2/data/ip'.
+# create_bd_design bd_0
+Wrote  : <D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+# set cell_inst [create_bd_cell -type ip -vlnv $ip_vlnv $bd_inst_name]
+# if { [llength $bd_props] } { 
+#   set_property -dict $bd_props $cell_inst 
+# }
+# make_bd_pins_external $cell_inst
+# make_bd_intf_pins_external $cell_inst
+# set bd_clk_ports [get_bd_ports -filter {TYPE==clk}]
+# if { $target_clk_freq_hz ne "" } { 
+#   foreach bd_clk_port $bd_clk_ports {
+#     # Remove "_0" suffix from BD ports & interfaces so they match IP ports 
+#     set clk_name [regsub {_0$} [get_property name $bd_clk_port] {}]
+#     set port_freq_hz $target_clk_freq_hz
+#     if { [dict exists $other_clks_freq_hz $clk_name] } {
+#         set port_freq_hz [dict get $other_clks_freq_hz $clk_name]
+#     }
+#     set_property CONFIG.FREQ_HZ $port_freq_hz $bd_clk_port
+#   }
+# }
+# foreach bd_port [get_bd_intf_ports] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# foreach bd_port [get_bd_ports -filter {INTF!=TRUE}] {
+#   set_property name [regsub {_0$} [get_property name $bd_port] {}] $bd_port
+# }
+# set s_axi_addr_width_min 32
+WARNING: [BD 5-233] No interface ports matched 'get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}'
+# foreach bd_port [get_bd_intf_ports -filter {MODE == "Slave" && VLNV =~ "xilinx.com:interface:aximm_rtl:*"}] {
+#   set bd_port_addr_width [get_property CONFIG.ADDR_WIDTH $bd_port]
+#   if { $bd_port_addr_width < $s_axi_addr_width_min } {
+#     puts "INFO: Updating $bd_port CONFIG.ADDR_WIDTH to $s_axi_addr_width_min"
+#     set_property CONFIG.ADDR_WIDTH $s_axi_addr_width_min $bd_port
+#   }
+# }
+# set_msg_config -id {[BD 41-1265]} -severity {CRITICAL WARNING} -new_severity {INFO}
+# assign_bd_address
+INFO: [BD 41-3093] Triggering Legacy Auto Assign Algorithm
+Wrote  : <D:\sidejob\ethernet_NN\NN\hls_component\hls_component\hls\impl\verilog\project.srcs\sources_1\bd\bd_0\bd_0.bd> 
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+make_wrapper: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 491.363 ; gain = 0.000
+# set toprtl [make_wrapper -files [get_files ${bd_design_name}.bd] -top]
+# add_files -norecurse $toprtl
+# set top_inst_name [file root [file tail $toprtl]]
+# puts "Using BD top: $top_inst_name"
+Using BD top: bd_0_wrapper
+# set xdc_files [glob -nocomplain ./*.xdc]
+# if { [llength $xdc_files] } {
+#     add_files -fileset constrs_1 -norecurse $xdc_files
+# }
+# launch_runs synth_1 -scripts_only
+INFO: [BD 41-1662] The design 'bd_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/sim/bd_0.v
+Verilog Output written to : D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hdl/bd_0_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block hls_inst .
+Exporting to file D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/hw_handoff/bd_0.hwh
+Generated Hardware Definition File D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.gen/sources_1/bd/bd_0/synth/bd_0.hwdef
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+# foreach run [get_runs -filter {IS_SYNTHESIS == 1}] {
+#   reset_run [get_runs $run]
+# }
+# set_property XPM_LIBRARIES {XPM_MEMORY XPM_FIFO} [current_project]
+# hls_vivado_reports_setup $report_options
+TIMESTAMP: HLS-REPORT: initialize report directories: 2025-04-22 07:42:43 +0800
+# if { $has_synth || $has_impl } {
+#   # synth properties setting
+#   set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value {-mode out_of_context} -objects [get_runs synth_1]
+#   set ip_inst [get_ips -quiet ${bd_design_name}*${bd_inst_name}*]
+#   if { ![llength $ip_inst] } {
+#       error "Cannot find HLS IP instance: ${bd_design_name}*${bd_inst_name}*"
+#   }
+#   set synth_run [get_runs -filter {IS_SYNTHESIS == 1} ${ip_inst}*]
+#   if { ![llength $synth_run] } {
+#       error "Cannot find synth run for HLS IP: ${ip_inst}*"
+#   }
+# 
+#   if { [llength $synth_design_args] } {
+#       set_property -name {STEPS.SYNTH_DESIGN.ARGS.MORE OPTIONS} -value $synth_design_args -objects $synth_run
+#   }
+# 
+#   if { [llength $synth_props] } {
+#     set_property -dict $synth_props $synth_run
+#   }
+# 
+#   # launch run synth
+#   launch_runs synth_1
+#   wait_on_run synth_1
+#   # synth reports
+#   hls_vivado_reports_synth synth_1 $report_options
+#   if { $synth_dcp ne "" } {
+#     file mkdir [file dirname $synth_dcp]
+#     set run_dcp [glob -nocomplain [get_property DIRECTORY $synth_run]/*.dcp]
+#     if { [llength $run_dcp] != 1 } { error "Cannot find single dcp file for run $synth_run" }
+#     file copy -force $run_dcp $synth_dcp
+#   }
+# }
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_0_hls_inst_0
+WARNING: [Vivado 12-7122] Auto Incremental Compile:: No reference checkpoint was found in run synth_1. Auto-incremental flow will not be run, the standard flow will be run instead.
+[Tue Apr 22 07:42:44 2025] Launched bd_0_hls_inst_0_synth_1...
+Run output will be captured here: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/bd_0_hls_inst_0_synth_1/runme.log
+[Tue Apr 22 07:42:44 2025] Launched synth_1...
+Run output will be captured here: D:/sidejob/ethernet_NN/NN/hls_component/hls_component/hls/impl/verilog/project.runs/synth_1/runme.log
+[Tue Apr 22 07:42:44 2025] Waiting for synth_1 to finish...
+
+WARNING: D:/Xilinx/Vivado/2024.2/tps/win64/jre11.0.16_1 does not exist.

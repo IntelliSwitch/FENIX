@@ -1,0 +1,6 @@
+
+Family       : zynquplus
+Device       : xczu19eg
+Package      : -ffvc1760
+Speed Grade  : -2-i
+Clock Period : 3.571

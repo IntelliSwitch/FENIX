@@ -1,0 +1,68 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  2325, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 83688, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  5702, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  2686, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  2677, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  9318, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  4857, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate ,  5189, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  8145, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  8036, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  8108, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  7982, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  9314, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  8000, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  8385, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations, 10279, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="CNN_stream" col1="ComponentsStream.cpp:5" col2="2325" col3="2677" col4="8036" col5="8000" col6="10279">
+                    <row id="14" col0="feature_separate_layer_stream&lt;9&gt;" col1="ComponentStream.h:11" col2="33" col3="73" col4="38" col5="38" col6="77"/>
+                    <row id="4" col0="embedding_layer_stream&lt;9&gt;" col1="ComponentStream.h:27" col2="79" col3="577" col4="1207" col5="1207" col6="1477"/>
+                    <row id="5" col0="feature_concate_layer_stream&lt;9&gt;" col1="ComponentStream.h:45" col2="81" col3="379" col4="1513" col5="1513" col6="2062"/>
+                    <row id="12" col0="fully_connect_layer_stream3&lt;9&gt;" col1="ComponentStream.h:90" col2="125" col3="338" col4="1600" col5="1600" col6="2399"/>
+                    <row id="8" col0="conv2d_3_stream_layer&lt;9&gt;" col1="ComponentStream.h:122" col2="170" col3="92" col4="166" col5="166" col6="446"/>
+                    <row id="10" col0="conv2d_3_stream_layer_post&lt;9&gt;" col1="ComponentStream.h:159" col2="114" col3="165" col4="97" col5="97" col6="222"/>
+                    <row id="15" col0="conv2d_4_stream_layer&lt;9&gt;" col1="ComponentStream.h:180" col2="170" col3="104" col4="208" col5="208" col6="572"/>
+                    <row id="16" col0="conv2d_4_stream_layer_post&lt;9&gt;" col1="ComponentStream.h:217" col2="125" col3="205" col4="121" col5="121" col6="266"/>
+                    <row id="2" col0="conv2d_5_stream_layer&lt;9&gt;" col1="ComponentStream.h:238" col2="171" col3="116" col4="250" col5="250" col6="698"/>
+                    <row id="17" col0="conv2d_5_stream_layer_post&lt;9&gt;" col1="ComponentStream.h:275" col2="136" col3="241" col4="141" col5="141" col6="302"/>
+                    <row id="9" col0="reshape_concate_layer_stream" col1="ComponentStream.h:294" col2="182" col3="111" col4="219" col5="219" col6="358"/>
+                    <row id="11" col0="fully_connect2_layer_stream" col1="ComponentStream.h:316" col2="69" col3="59" col4="165" col5="111" col6="148"/>
+                    <row id="6" col0="l_softmax_layer_stream" col1="ComponentStream.h:331" col2="465" col3="92" col4="98" col5="98" col6="95">
+                        <row id="7" col0="exp" col1="expfloat.cpp:15" col2="4" col3="" col4="" col5="" col6="">
+                            <row id="3" col0="exp" col1="hls_exp_float.cpp:15" col2="2" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="13" col0="log" col1="logfloat.cpp:7" col2="4" col3="" col4="" col5="" col6="">
+                            <row id="1" col0="log" col1="hls_log_float.cpp:7" col2="2" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>
+

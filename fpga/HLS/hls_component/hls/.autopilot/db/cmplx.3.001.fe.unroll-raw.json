@@ -1,0 +1,197 @@
+{
+  "0": {
+    "basicblocks": 33,
+    "calls": "8 12 5 3 10 1 7 6 4 11 9 2 13",
+    "file": "ComponentsStream.cpp",
+    "fileloc": 5,
+    "instructions": 195,
+    "name": "CNN_stream",
+    "total_instructions": 83688
+  },
+  "1": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 159,
+    "instructions": 375,
+    "loads": {
+      "L": 42
+    },
+    "name": "conv2d_3_stream_layer_post<9>",
+    "stores": {
+      "L": 54
+    },
+    "total_instructions": 375
+  },
+  "10": {
+    "basicblocks": 425,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 122,
+    "instructions": 6747,
+    "loads": {
+      "L": 2592
+    },
+    "name": "conv2d_3_stream_layer<9>",
+    "stores": {
+      "L": 336
+    },
+    "total_instructions": 6747
+  },
+  "11": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 275,
+    "instructions": 539,
+    "loads": {
+      "L": 50
+    },
+    "name": "conv2d_5_stream_layer_post<9>",
+    "stores": {
+      "L": 90
+    },
+    "total_instructions": 539
+  },
+  "12": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 27,
+    "instructions": 580,
+    "loads": {
+      "G": 162
+    },
+    "name": "embedding_layer_stream<9>",
+    "total_instructions": 580
+  },
+  "13": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 331,
+    "instructions": 44,
+    "loads": {
+      "L": 4
+    },
+    "name": "l_softmax_layer_stream",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 148
+  },
+  "2": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 316,
+    "instructions": 666,
+    "loads": {
+      "L": 144
+    },
+    "name": "fully_connect2_layer_stream",
+    "stores": {
+      "L": 108
+    },
+    "total_instructions": 666
+  },
+  "3": {
+    "basicblocks": 416,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 90,
+    "instructions": 51493,
+    "loads": {
+      "L": 14400
+    },
+    "name": "fully_connect_layer_stream3<9>",
+    "stores": {
+      "L": 7350
+    },
+    "total_instructions": 51493
+  },
+  "4": {
+    "basicblocks": 701,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 238,
+    "instructions": 10923,
+    "loads": {
+      "L": 4320
+    },
+    "name": "conv2d_5_stream_layer<9>",
+    "stores": {
+      "L": 432
+    },
+    "total_instructions": 10923
+  },
+  "5": {
+    "basicblocks": 499,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 45,
+    "instructions": 2434,
+    "loads": {
+      "L": 486
+    },
+    "name": "feature_concate_layer_stream<9>",
+    "stores": {
+      "L": 324
+    },
+    "total_instructions": 2434
+  },
+  "6": {
+    "basicblocks": 18,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 217,
+    "instructions": 463,
+    "loads": {
+      "L": 48
+    },
+    "name": "conv2d_4_stream_layer_post<9>",
+    "stores": {
+      "L": 72
+    },
+    "total_instructions": 463
+  },
+  "7": {
+    "basicblocks": 563,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 180,
+    "instructions": 8730,
+    "loads": {
+      "L": 3456
+    },
+    "name": "conv2d_4_stream_layer<9>",
+    "stores": {
+      "L": 384
+    },
+    "total_instructions": 8730
+  },
+  "8": {
+    "basicblocks": 4,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 11,
+    "instructions": 112,
+    "name": "feature_separate_layer_stream<9>",
+    "total_instructions": 130
+  },
+  "9": {
+    "basicblocks": 10,
+    "calls": "",
+    "file": "ComponentStream.h",
+    "fileloc": 294,
+    "instructions": 265,
+    "loads": {
+      "L": 36
+    },
+    "name": "reshape_concate_layer_stream",
+    "stores": {
+      "L": 36
+    },
+    "total_instructions": 265
+  }
+}
