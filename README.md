@@ -20,7 +20,7 @@ If you use this repository, please cite our paper as follows:
   url       = {TODO},
   doi       = {TODO},
   booktitle = {23rd USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},
-  series    = {NSDI '26'}
+  series    = {NSDI '26}
 }
 ```
 
