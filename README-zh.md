@@ -21,7 +21,7 @@ FENIX 是一个混合式网络内机器学习系统，旨在实现高效、低�
   url       = {TODO},
   doi       = {TODO},
   booktitle = {23th USENIX Symposium on Networked Systems Design and Implementation (NSDI 26)},
-  series    = {NSDI '26'}
+  series    = {NSDI '26}
 }
 ```
 
