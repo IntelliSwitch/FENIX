@@ -21,4 +21,4 @@
 
 ## 3. 编译运行
 
-使用对应版本的vivado和vitis HLS打开工程生成bit流烧录即可。
+使用对应版本的vivado和vitis HLS打开工程，根据HLS目录下的config生成对应的IP核，将该IP核倒入到vivado工程当中生成bit流烧录即可。
