@@ -1,4 +1,4 @@
-# Vivado自动生成目录和文件
+
 vivado/*/runs/
 vivado/*/cache/
 vivado/*/hw/
@@ -10,23 +10,23 @@ vivado/*/*.jou
 vivado/*/*.log
 vivado/*/*.xpr.lock
 
-# IP核目录：只保留.xci文件
+
 vivado/*/ip/*
 !vivado/*/ip/*.xci
 
-# HLS自动生成目录
+
 HLS/*/solution*/sim/
 HLS/*/solution*/impl/
 HLS/*/solution*/syn/
 HLS/*/solution*/.autopilot.db/
 HLS/*/solution*/.Xil/
 
-# 通用临时文件
+
 *.tmp
 *.bak
 *.swp
 
-# 允许源码、约束、工程、IP配置、HLS脚本
+
 !vivado/**/*.v
 !vivado/**/*.vh
 !vivado/**/*.sv
