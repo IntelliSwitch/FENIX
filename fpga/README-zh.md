@@ -21,10 +21,4 @@
 
 ## 3. 编译运行
 
-```bash
-# 模型综合
-vitis_hls -f scripts/build_cnn.tcl
-
-# C仿真
-vitis_hls -p model_engine_cnn -f run_csim.tcl
-```
+使用对应版本的vivado和vitis HLS打开工程生成bit流烧录即可。
