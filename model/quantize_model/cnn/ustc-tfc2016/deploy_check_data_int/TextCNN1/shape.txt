@@ -1,0 +1,35 @@
+[256, 9, 2]: TextCNN1::input_0
+[256, 9, 2]: TextCNN1::TextCNN1/675
+[256, 9]: TextCNN1::TextCNN1/ret.3
+[256, 9]: TextCNN1::TextCNN1/692
+[256, 9, 2]: TextCNN1::TextCNN1/697
+[256, 9]: TextCNN1::TextCNN1/ret.5
+[256, 9]: TextCNN1::TextCNN1/714
+[256, 9]: TextCNN1::TextCNN1/722
+[256, 9]: TextCNN1::TextCNN1/727
+[256, 9]: TextCNN1::TextCNN1/735
+[256, 9]: TextCNN1::TextCNN1/740
+[256, 9, 10]: TextCNN1::TextCNN1/Embedding[len_embedding]/ret.7
+[256, 9, 8]: TextCNN1::TextCNN1/Embedding[ipd_embedding]/ret.9
+[256, 9, 18]: TextCNN1::TextCNN1/ret.11
+[256, 9, 4]: TextCNN1::TextCNN1/Linear[fc1]/ret.13
+[256, 36]: TextCNN1::TextCNN1/ret.15
+[256, 9, 4, 1]: TextCNN1::TextCNN1/ret.17_swim_transpose_2
+[256, 7, 1, 4]: TextCNN1::TextCNN1/Conv2d[conv3]/ret.19
+[256, 7, 1, 4]: TextCNN1::TextCNN1/ret.21
+[256, 4, 7, 1]: TextCNN1::TextCNN1/ret.21_sink_transpose_0
+[256, 6, 1, 4]: TextCNN1::TextCNN1/Conv2d[conv4]/ret.23
+[256, 6, 1, 4]: TextCNN1::TextCNN1/ret.25
+[256, 4, 6, 1]: TextCNN1::TextCNN1/ret.25_sink_transpose_1
+[256, 5, 1, 4]: TextCNN1::TextCNN1/Conv2d[conv5]/ret.27
+[256, 5, 1, 4]: TextCNN1::TextCNN1/ret.29
+[256, 4, 5, 1]: TextCNN1::TextCNN1/ret.29_sink_transpose_2
+[256, 28]: TextCNN1::TextCNN1/ret.31
+[256, 24]: TextCNN1::TextCNN1/ret.33
+[256, 20]: TextCNN1::TextCNN1/ret.35
+[256, 72]: TextCNN1::TextCNN1/ret.37
+[256, 1, 72]: TextCNN1::TextCNN1/ret.39
+[256, 1, 12]: TextCNN1::TextCNN1/Linear[fc2]/ret.41
+[256, 12]: TextCNN1::TextCNN1/ret.45
+[256, 12]: TextCNN1::TextCNN1/BatchNorm1d[bn_logits]/ret.47
+[256, 12]: TextCNN1::TextCNN1/ret

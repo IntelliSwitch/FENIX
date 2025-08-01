@@ -1,0 +1,34 @@
+{
+  "param":
+  {
+    "TextCNN1::fc1.weight":[[8,6]],
+    "TextCNN1::fc1.bias":[[8,7]],
+    "TextCNN1::conv3.weight":[[8,6]],
+    "TextCNN1::conv3.bias":[[8,5]],
+    "TextCNN1::conv4.weight":[[8,6]],
+    "TextCNN1::conv4.bias":[[8,7]],
+    "TextCNN1::conv5.weight":[[8,6]],
+    "TextCNN1::conv5.bias":[[8,5]],
+    "TextCNN1::fc2.weight":[[8,5]],
+    "TextCNN1::fc2.bias":[[8,6]],
+    "TextCNN1::bn_logits.weight":[[8,6]],
+    "TextCNN1::bn_logits.bias":[[8,3]]
+  },
+  "output":
+  {
+    "TextCNN1::nndct_input_0":[[8,null]],
+    "TextCNN1::nndct_concat_14":[[8,5]],
+    "TextCNN1::nndct_dense_15":[[8,3]],
+    "TextCNN1::nndct_concat_30":[[8,4]],
+    "TextCNN1::nndct_dense_32":[[8,2]],
+    "TextCNN1::nndct_batch_norm_35":[[8,3]]
+  },
+  "input":
+  {
+
+  },
+  "fast_finetuned":false,
+  "bias_corrected":true,
+  "version":"3.5.0+60df3f1+torch1.13.1+cu117",
+  "graph_md5":"245248e9f490ba736ada4cace206d096"
+}
