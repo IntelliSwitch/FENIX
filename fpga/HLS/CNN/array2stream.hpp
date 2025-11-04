@@ -5,7 +5,7 @@
 #include <hls_stream.h>
 
 
-// 计算流宽度
+
 template<typename T, int DIM1, int DIM2 = 1, int FLATTEN_DIM = 2>
 struct StreamType {
     static constexpr int element_width = sizeof(T) * 8;
@@ -17,7 +17,6 @@ struct StreamType {
     using type = hls::stream<ap_uint<stream_width>>;
 };
 
-// 宏：声明流参数
 #define STREAM_PARAM(T, DIM1, DIM2, NAME, FLATTEN_DIM) \
     typename StreamType<T, DIM1, DIM2, FLATTEN_DIM>::type &NAME
 
@@ -35,6 +34,7 @@ struct StreamType {
         STREAM.write(data); \
     } while (0)
 */
+
 
 
 
