@@ -267,7 +267,6 @@ void conv3_layer_stream(
                             }
                         }
                     }                
-                    // ReLU 激活
                     conv3_x.data[c * out_height * out_width + oh * out_width + ow] = sum > 0 ? sum : dtype(0);
                 }
             }
@@ -727,3 +726,4 @@ void textcnn1_stream(
 
 
 #endif
+
