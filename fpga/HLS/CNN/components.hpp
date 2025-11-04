@@ -235,10 +235,9 @@ void conv3_layer_stream(
 ){
 #if stream
 #endif
-// 输出形状 [nk=4, out_height=7, out_width=1]，展平为 [28]
-    constexpr int nk = 4;        // 输出通道数
-    constexpr int kh = 3;        // 卷积核高度
-    constexpr int kw = 4;        // 卷积核宽度
+    constexpr int nk = 4;
+    constexpr int kh = 3;
+    constexpr int kw = 4;
     constexpr int out_height = 7; // (9 - 3 + 0) / 1 + 1
     constexpr int out_width = 1;  // (4 - 4 + 0) / 1 + 1
 
@@ -246,25 +245,24 @@ void conv3_layer_stream(
         #pragma HLS PIPELINE II=II_TARGET
         fc1_x_stream fc1_x_0 = fc1_x_0_.read();
         conv3_x_stream conv3_x;
-        // 清零输出
+
         for (int i = 0; i < 28; ++i) {
             #pragma HLS UNROLL
             conv3_x.data[i] = 0.0f;
         }
 
-        // 卷积计算
-        for (int c = 0; c < nk; ++c) { // 输出通道
+        for (int c = 0; c < nk; ++c) {
             #pragma HLS UNROLL
-            for (int oh = 0; oh < out_height; ++oh) { // 输出高度
+            for (int oh = 0; oh < out_height; ++oh) {
                 #pragma HLS UNROLL
-                for (int ow = 0; ow < out_width; ++ow) { // 输出宽度
+                for (int ow = 0; ow < out_width; ++ow) {
                     dtype sum = conv3_bias[c];
-                    // 卷积核滑窗
+
                     for (int kh_i = 0; kh_i < kh; ++kh_i) {
                         for (int kw_i = 0; kw_i < kw; ++kw_i) {
-                            int ih = oh + kh_i; // 输入高度索引
-                            int iw = ow + kw_i; // 输入宽度索引
-                            if (ih < 9 && iw < 4) { // 边界检查
+                            int ih = oh + kh_i;
+                            int iw = ow + kw_i;
+                            if (ih < 9 && iw < 4) {
                                 sum += fc1_x_0.data[ih][iw] * conv3_weight[c][0][kh_i][kw_i];
                             }
                         }
@@ -288,10 +286,9 @@ void conv4_layer_stream(
     ) {
 #if stream
 #endif    
-    // 输出形状 [nk=4, out_height=6, out_width=1]，展平为 [24]
-    constexpr int nk = 4;        // 输出通道数
-    constexpr int kh = 4;        // 卷积核高度
-    constexpr int kw = 4;        // 卷积核宽度
+    constexpr int nk = 4;
+    constexpr int kh = 4;
+    constexpr int kw = 4;
     constexpr int out_height = 6; // (9 - 4 + 0) / 1 + 1
     constexpr int out_width = 1;  // (4 - 4 + 0) / 1 + 1
 
@@ -300,30 +297,28 @@ void conv4_layer_stream(
         #pragma HLS PIPELINE II=II_TARGET
         fc1_x_stream fc1_x_0 = fc1_x_0_.read();
         conv4_x_stream conv4_x;
-        // 清零输出
+
         for (int i = 0; i < 24; ++i) {
             #pragma HLS UNROLL
             conv4_x.data[i] = dtype(0);
         }
-
-        // 卷积计算
-        for (int c = 0; c < nk; ++c) { // 输出通道
+        for (int c = 0; c < nk; ++c) {
             #pragma HLS UNROLL
-            for (int oh = 0; oh < out_height; ++oh) { // 输出高度
+            for (int oh = 0; oh < out_height; ++oh) {
                 #pragma HLS UNROLL
-                for (int ow = 0; ow < out_width; ++ow) { // 输出宽度
+                for (int ow = 0; ow < out_width; ++ow) {
                     dtype sum = conv4_bias[c];
-                    // 卷积核滑窗
+                 
                     for (int kh_i = 0; kh_i < kh; ++kh_i) {
                         for (int kw_i = 0; kw_i < kw; ++kw_i) {
-                            int ih = oh + kh_i; // 输入高度索引
-                            int iw = ow + kw_i; // 输入宽度索引
-                            if (ih < 9 && iw < 4) { // 边界检查
+                            int ih = oh + kh_i;
+                            int iw = ow + kw_i;
+                            if (ih < 9 && iw < 4) { 
                                 sum += fc1_x_0.data[ih][iw] * conv4_weight[c][0][kh_i][kw_i];
                             }
                         }
                     }
-                    // ReLU 激活
+
                     conv4_x.data[c * out_height * out_width + oh * out_width + ow] = sum > 0 ? sum : dtype(0);
                 }
             }
@@ -342,10 +337,10 @@ void conv5_layer_stream(
     ) {
 #if stream
 #endif    
-    // 输出形状 [nk=4, out_height=5, out_width=1]，展平为 [20]
-    constexpr int nk = 4;        // 输出通道数
-    constexpr int kh = 5;        // 卷积核高度
-    constexpr int kw = 4;        // 卷积核宽度
+
+    constexpr int nk = 4;
+    constexpr int kh = 5; 
+    constexpr int kw = 4;
     constexpr int out_height = 5; // (9 - 5 + 0) / 1 + 1
     constexpr int out_width = 1;  // (4 - 4 + 0) / 1 + 1
 
@@ -354,30 +349,29 @@ void conv5_layer_stream(
         #pragma HLS PIPELINE II=II_TARGET
         fc1_x_stream fc1_x_0 = fc1_x_0_.read();
         conv5_x_stream conv5_x;
-        // 清零输出
+
         for (int i = 0; i < 20; ++i) {
             #pragma HLS UNROLL
             conv5_x.data[i] = dtype(0);
         }
 
-        // 卷积计算
-        for (int c = 0; c < nk; ++c) { // 输出通道
+
+        for (int c = 0; c < nk; ++c) {
             #pragma HLS UNROLL
-            for (int oh = 0; oh < out_height; ++oh) { // 输出高度
+            for (int oh = 0; oh < out_height; ++oh) {
                 #pragma HLS UNROLL
-                for (int ow = 0; ow < out_width; ++ow) { // 输出宽度
+                for (int ow = 0; ow < out_width; ++ow) {
                     dtype sum = conv5_bias[c];
-                    // 卷积核滑窗
+
                     for (int kh_i = 0; kh_i < kh; ++kh_i) {
                         for (int kw_i = 0; kw_i < kw; ++kw_i) {
-                            int ih = oh + kh_i; // 输入高度索引
-                            int iw = ow + kw_i; // 输入宽度索引
-                            if (ih < 9 && iw < 4) { // 边界检查
+                            int ih = oh + kh_i;
+                            int iw = ow + kw_i; 
+                            if (ih < 9 && iw < 4) {
                                 sum += fc1_x_0.data[ih][iw] * conv5_weight[c][0][kh_i][kw_i];
                             }
                         }
                     }
-                    // ReLU 激活
                     conv5_x.data[c * out_height * out_width + oh * out_width + ow] = sum > 0 ? sum : dtype(0);
                 }
             }
@@ -434,20 +428,19 @@ void fc2_layer_stream(
 #if stream
 
 #endif
-    // 输出形状 [num_classes=7]
-    constexpr int in_features = 72;  // 输入维度 (18*nk, nk=4)
-    constexpr int out_features = 7;  // 输出维度 (num_classes)
+
+    constexpr int in_features = 72; 
+    constexpr int out_features = 7;
     for(unsigned int kk = 0; kk < BATCH_SIZE; kk++){
         #pragma HLS PIPELINE II=II_TARGET
         conv_x_stream conv_x = conv_x_.read();
         fc2_x_stream fc2_x;
-        // 清零输出
+
         for (int i = 0; i < out_features; ++i) {
             #pragma HLS UNROLL
             fc2_x.data[i] = dtype(0);
         }
 
-        // 全连接计算
         for (int i = 0; i < out_features; ++i) {
             #pragma HLS UNROLL
             dtype sum = fc2_bias[i];
@@ -469,7 +462,6 @@ void bn_logits_layer_stream(
     hls::stream<fc2_x_stream>& fc2_x_in_,
     hls::stream<bn_logits_x_stream>& bn_logits_x_
     ) {
-    // 输出形状 [num_classes=7]
     
     constexpr int num_classes = 7;
     for(unsigned int kk = 0; kk < BATCH_SIZE; kk++){
@@ -482,7 +474,7 @@ void bn_logits_layer_stream(
             #pragma HLS UNROLL
             fc2_x[i] = float(fc2_x_.data[i]);
         }
-        // 批归一化计算
+
         for (int i = 0; i < num_classes; ++i) {
             #pragma HLS UNROLL
             // (x - mean) / sqrt(var + epsilon) * weight + bias
@@ -502,15 +494,12 @@ void log_softmax_layer_stream(
     hls::stream<bn_logits_x_stream>& fc2_x_,
     hls::stream<bn_logits_x_stream>& bn_logits_x_
     ) {
-    // 输出形状 [num_classes=7]
-    
     constexpr int num_classes = 7;
     for(unsigned int kk = 0; kk < BATCH_SIZE; kk++){
         #pragma HLS PIPELINE II=II_TARGET
         bn_logits_x_stream fc2_x = fc2_x_.read();
         bn_logits_x_stream bn_logits_x;
         #pragma HLS aggregate variable=fc2_x compact=byte
-        // 找到最大值以提高数值稳定性
         float max_val = fc2_x.data[0];
         for (int i = 1; i < num_classes; ++i) {
             #pragma HLS UNROLL
@@ -518,15 +507,11 @@ void log_softmax_layer_stream(
                 max_val = fc2_x.data[i];
             }
         }
-
-        // 计算 exp(x - max) 的和
         float sum_exp = 0.0f;
         for (int i = 0; i < num_classes; ++i) {
             #pragma HLS UNROLL
             sum_exp += std::exp(fc2_x.data[i] - max_val);
         }
-
-        // 计算 log_softmax: x[i] - max - log(sum(exp(x[j] - max)))
         float log_sum_exp = max_val + std::log(sum_exp);
         for (int i = 0; i < num_classes; ++i) {
             #pragma HLS UNROLL
@@ -539,7 +524,7 @@ void log_softmax_layer_stream(
 
 
 
-// 工具函数：从FIFO填充数组（支持float和dtype）
+
 template<typename T>
 static void fill_array(T* arr, int size, hls::stream<ap_uint<512>> &param_fifo, int &total_elements) {
     #pragma HLS INLINE
@@ -563,26 +548,18 @@ static void fill_array(T* arr, int size, hls::stream<ap_uint<512>> &param_fifo, 
     }
 }
 
-// 更新函数：从512位宽FIFO读取数据并更新所有全局参数
+
 void update_params(hls::stream<ap_uint<512>> &param_fifo) {
     #pragma HLS INTERFACE port=param_fifo mode=ap_fifo
     //#pragma HLS INLINE
-
-    // 如果FIFO为空，直接返回不更新
     if (param_fifo.empty()) {
         return;
     }
-
-    // 跟踪已读取的元素数量
     int total_elements = 0;
-
-    // 填充float类型的参数
     fill_array<float>(bn_logits_bias, 7, param_fifo, total_elements);
     fill_array<float>(bn_logits_running_mean, 7, param_fifo, total_elements);
     fill_array<float>(bn_logits_running_var, 7, param_fifo, total_elements);
     fill_array<float>(bn_logits_weight, 7, param_fifo, total_elements);
-
-    // 填充dtype类型的参数
     fill_array<dtype>(conv3_bias, 4, param_fifo, total_elements);
     fill_array<dtype>((dtype*)conv3_weight, 4*1*3*4, param_fifo, total_elements);  // 48
     fill_array<dtype>(conv4_bias, 4, param_fifo, total_elements);
@@ -599,10 +576,9 @@ void update_params(hls::stream<ap_uint<512>> &param_fifo) {
     fill_array<dtype>((dtype*)len_embedding_weight1, 1501*10, param_fifo, total_elements); // 15010
     fill_array<dtype>((dtype*)ipd_embedding_weight2, 2561*8, param_fifo, total_elements);  // 20488
     fill_array<dtype>((dtype*)len_embedding_weight2, 1501*10, param_fifo, total_elements); // 15010    
-    // 处理最后一次读取（如果不满16 elements）
     const int elements_per_read = 512 / 32;
     if (total_elements % elements_per_read != 0) {
-        param_fifo.read(); // 丢弃剩余数据
+        param_fifo.read();
     }
 }
 
@@ -624,8 +600,6 @@ void textcnn1_stream(
     */
     #pragma HLS DATAFLOW
     
-
-    // 中间数组
     /*
     dintype len_x_din[9];
     dintype ipd_x_din[9];
@@ -736,7 +710,6 @@ void textcnn1_stream(
     #pragma HLS ARRAY_PARTITION variable=conv5_weight dim=0 type=complete
     //#endif
 
-    // 数据流调用各模块
     feature_separate_layer_stream<stream>(din, len_x_din, ipd_x_din);
     len_embedding_layer_stream<stream>(len_x_din, len_x);
     ipd_embedding_layer_stream<stream>(ipd_x_din, ipd_x);
@@ -751,5 +724,6 @@ void textcnn1_stream(
     bn_logits_layer_stream<stream>(fc2_x, bn_logits_x);
     log_softmax_layer_stream<stream>(bn_logits_x, log_softmax_x);
 }
+
 
 #endif
